@@ -7,7 +7,7 @@ export interface HeroProps {
 
 export default function Hero({ scrollToComponent }: HeroProps) {
   return (
-    <div className="bg-blue-500 h-full text-white flex flex-col justify-center items-center relative z-10">
+    <div className="bg-slate-800 h-full text-white flex flex-col justify-center items-center relative z-10">
       <h1 className="text-3xl mb-4">Hero Theme</h1>
       <Nav scrollToComponent={scrollToComponent} />
     </div>
