@@ -5,13 +5,11 @@ export interface HeroProps {
   scrollToComponent: (component: string) => void;
 }
 
-const Hero: React.FC<HeroProps> = ({ scrollToComponent }) => {
+export default function Hero({ scrollToComponent }: HeroProps) {
   return (
-    <div className="bg-blue-500 h-full text-white flex flex-col justify-center items-center">
+    <div className="bg-blue-500 h-full text-white flex flex-col justify-center items-center relative z-10">
       <h1 className="text-3xl mb-4">Hero Theme</h1>
       <Nav scrollToComponent={scrollToComponent} />
     </div>
   );
-};
-
-export default Hero;
+}
