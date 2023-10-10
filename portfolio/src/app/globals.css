@@ -25,3 +25,35 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer utilities {
+  @keyframes wave-color {
+    0% {
+      color: rgb(30, 41, 59);
+    }
+    25% {
+      color: rgb(79, 88, 104);
+    }
+    50% {
+      color: rgb(128, 135, 149);
+    }
+    75% {
+      color: rgb(177, 182, 194);
+    }
+    100% {
+      color: rgb(226, 232, 240);
+    }
+  }
+
+  .animate-wave {
+    animation: wave-color 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .group .animate-wave:hover {
+    animation: none;
+    color: rgb(240, 248, 253);
+  }
+}
