@@ -57,3 +57,10 @@ body {
     color: rgb(240, 248, 253);
   }
 }
+
+.animate-wave-infinite {
+  animation: wave-color 3s infinite;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+  transition: color 0.3s ease-in-out;
+}

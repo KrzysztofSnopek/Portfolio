@@ -3,22 +3,21 @@ import React from "react";
 interface AnimatedLettersProps {
   letterClass: string;
   splitText: string[];
-  idx: number;
+  delays: number[];
 }
 
 const AnimatedLetters: React.FC<AnimatedLettersProps> = ({
   letterClass,
   splitText,
-  idx,
+  delays,
 }) => {
   return (
     <span className="group">
       {splitText.map((char, i) => (
         <span
           key={char + i}
-          className={`${letterClass} text-slate-200 animate-wave min-w-10 delay-${
-            i + idx
-          }`}
+          className={`${letterClass} text-slate-200 min-w-10`}
+          style={{ animationDelay: `${delays[i]}s` }}
         >
           {char}
         </span>
