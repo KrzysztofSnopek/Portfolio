@@ -43,7 +43,7 @@ const App: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="w-2/3 h-screen overflow-y-scroll">
+      <div className="w-2/3 h-screen overflow-y-scroll scrollbar-thin scrollbar-thumb-slate-300 scrollbar-track-slate-600">
         <div id="home">
           <Home />
         </div>
