@@ -29,27 +29,21 @@ body {
 @layer utilities {
   @keyframes wave-color {
     0% {
-      color: rgb(30, 41, 59);
-    }
-    12% {
-      color: rgb(55, 64, 81);
-    }
-    25% {
       color: rgb(79, 88, 104);
     }
-    37% {
+    16% {
       color: rgb(104, 111, 126);
     }
-    50% {
+    32% {
       color: rgb(128, 135, 149);
     }
-    63% {
+    48% {
       color: rgb(153, 158, 172);
     }
-    75% {
+    64% {
       color: rgb(177, 182, 194);
     }
-    87% {
+    80% {
       color: rgb(200, 210, 219);
     }
     100% {

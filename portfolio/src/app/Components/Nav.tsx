@@ -13,7 +13,7 @@ import {
 export default function Nav({ scrollToComponent }: HeroProps) {
   return (
     <>
-      <nav className="nav-bar flex flex-col p-4 my-6 w-20 bg-slate-900 rounded-full justify-between shadow-md text-2xl h-96 items-center">
+      <nav className="nav-bar flex flex-col p-4 my-6 w-20 bg-slate-800 rounded-full justify-between shadow-md text-2xl h-96 items-center">
         <div
           className="cursor-pointer pt-4 text-slate-400 hover:before:content-['Home'] hover:text-slate-200 hover:text-sm group h-16 flex"
           onClick={() => scrollToComponent("home")}
