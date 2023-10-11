@@ -31,14 +31,26 @@ body {
     0% {
       color: rgb(30, 41, 59);
     }
+    12% {
+      color: rgb(55, 64, 81);
+    }
     25% {
       color: rgb(79, 88, 104);
+    }
+    37% {
+      color: rgb(104, 111, 126);
     }
     50% {
       color: rgb(128, 135, 149);
     }
+    63% {
+      color: rgb(153, 158, 172);
+    }
     75% {
       color: rgb(177, 182, 194);
+    }
+    87% {
+      color: rgb(200, 210, 219);
     }
     100% {
       color: rgb(226, 232, 240);
@@ -59,7 +71,7 @@ body {
 }
 
 .animate-wave-infinite {
-  animation: wave-color 3s infinite;
+  animation: wave-color 5s infinite;
   animation-delay: 0.1s;
   animation-fill-mode: both;
   transition: color 0.3s ease-in-out;

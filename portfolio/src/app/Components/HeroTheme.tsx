@@ -14,7 +14,11 @@ export default function Hero({ scrollToComponent }: HeroProps) {
   return (
     <div className="bg-slate-800 h-full text-white flex flex-col justify-center items-center relative z-10">
       <h1 className="text-3xl mb-4">Hero Theme</h1>
-      <Nav scrollToComponent={scrollToComponent} />
+
+      <div className="absolute left-4 flex">
+        <Nav scrollToComponent={scrollToComponent} />
+      </div>
+
       <div className="flex items-center justify-center min-h-screen flex-col">
         <div className="text-4xl z-20 text-green-300">
           <AnimatedLetters
