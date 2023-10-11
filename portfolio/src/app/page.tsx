@@ -7,6 +7,9 @@ import Contact from "./Layouts/Contact";
 import Projects from "./Layouts/Projects";
 import PhotoBlob from "./Components/PhotoBlob";
 import Image from "next/image";
+import Home from "./Layouts/Home";
+import Resume from "./Layouts/Resume";
+import Skills from "./Layouts/Skills";
 
 const App: React.FC = () => {
   const [activeComponent, setActiveComponent] = useState<string | null>(null);
@@ -41,11 +44,20 @@ const App: React.FC = () => {
         </div>
       </div>
       <div className="w-2/3 h-screen overflow-y-scroll">
+        <div id="home">
+          <Home />
+        </div>
         <div id="about">
           <About />
         </div>
         <div id="projects">
           <Projects />
+        </div>
+        <div id="resume">
+          <Resume />
+        </div>
+        <div id="skills">
+          <Skills />
         </div>
         <div id="contact">
           <Contact />

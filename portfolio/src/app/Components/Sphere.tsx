@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, Sphere } from "@react-three/drei";
-import { PerspectiveCamera } from "three";
 
 interface SphereComponentProps {
   canvasSize: { width: number; height: number };
@@ -31,8 +30,10 @@ const SphereComponent: React.FC<SphereComponentProps> = ({ canvasSize }) => {
         far={1000}
       />
       <ambientLight intensity={6} />
-      {/* <directionalLight position={[10, 10, 5]} intensity={1} /> */}
-      <Sphere args={[1, 100, 200]} scale={[aspectRatio, aspectRatio, 1]}>
+      <Sphere
+        args={[1, 100, 200]}
+        scale={[0.9 * aspectRatio, 0.9 * aspectRatio, 1]}
+      >
         <MeshDistortMaterial
           color="#1f2733"
           attach="material"

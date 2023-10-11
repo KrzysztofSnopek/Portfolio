@@ -27,6 +27,7 @@ export default function Hero({ scrollToComponent }: HeroProps) {
             delays={[0.1]}
           />
         </div>
+
         <div className="text-4xl z-20 text-green-300">
           <AnimatedLetters
             letterClass="animate-wave-infinite"
