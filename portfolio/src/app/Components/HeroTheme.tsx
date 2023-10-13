@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import AnimatedLetters from "./AnimatedLetters";
-import generateDelays from "@/Helpers/generateDelays";
+import generateDelays from "@/app/Helpers/generateDelays";
 import Socials from "./Socials";
 
 export interface HeroProps {

@@ -13,6 +13,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: {
+        flip: "0 0px 0px 100px rgba(51, 65, 85, 1)",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")],
