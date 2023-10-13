@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FlipMove from "react-flip-move";
+import Tile from "./Tile";
 
 const FlippingTile: React.FC = () => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -10,39 +10,14 @@ const FlippingTile: React.FC = () => {
 
   return (
     <div
-      className="relative w-48 h-48"
+      className="flex min-h-screen items-center justify-center"
       onMouseEnter={toggleFlip}
-      onMouseLeave={toggleFlip}
     >
-      <FlipMove
-        typeName={null}
-        duration={500}
-        enterAnimation="accordionVertical"
-        leaveAnimation="accordionVertical"
-      >
-        {isFlipped ? (
-          <div className="w-48 h-48 bg-black rounded-lg">
-            <div className="h-24 w-48 relative overflow-hidden">
-              <div className="bg-black h-full w-full rounded-t-lg"></div>
-              <div className="bg-transparent h-full w-24 rounded-tl-full absolute bottom-0 right-0"></div>
-            </div>
-            <div className="w-48 h-24 relative">
-              <div className="bg-black h-full w-full rounded-b-lg"></div>
-              <div className="bg-transparent h-full w-24 rounded-bl-full absolute top-0 right-0"></div>
-            </div>
-          </div>
-        ) : (
-          <div
-            className="w-48 h-48 bg-black rounded-lg"
-            style={{
-              backgroundImage:
-                "url(https://example.com/your-background-image.jpg)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          ></div>
-        )}
-      </FlipMove>
+      <div className="group h-96 w-80 [perspective:2000px]">
+        <div className="h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+          {/* <div className="h-full w-full rounded-xl bg-black/80 px-12 [transform:rotateY(180deg)] [backface-visibility:hidden]"></div> */}
+        </div>
+      </div>
     </div>
   );
 };
