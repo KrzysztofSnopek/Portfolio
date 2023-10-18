@@ -12,6 +12,8 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        code: "url('/Images/Code.jpg')",
+        smoke: "url('/Images/SmokySky.jpg')",
       },
       boxShadow: {
         flip: "0 0px 0px 100px rgba(51, 65, 85, 1)",

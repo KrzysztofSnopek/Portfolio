@@ -24,13 +24,13 @@ const App: React.FC = () => {
 
   return (
     <div className="flex relative">
-      <div className="w-1/3 h-screen overflow-hidden z-10">
+      <div className="w-1/3 h-screen overflow-hidden z-30">
         <HeroTheme scrollToComponent={scrollToComponent} />
       </div>
-      <div className="absolute top-1/2 left-[20vw] transform -translate-y-1/2 w-1/3">
+      <div className="absolute top-1/2 left-[20vw] transform -translate-y-1/2 w-1/3 z-10">
         <PhotoBlob />
       </div>
-      <div className="absolute top-1/2 left-[20vw] transform -translate-y-1/2 w-1/3 z-20">
+      <div className="absolute top-1/2 left-[20vw] transform -translate-y-1/2 w-1/3 z-40">
         <div className="absolute top-1/2 transform -translate-y-1/2 left-1/2 -translate-x-1/2">
           <div className="h-80 w-80 relative">
             <Image

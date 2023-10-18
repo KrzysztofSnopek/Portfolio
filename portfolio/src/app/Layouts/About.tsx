@@ -10,7 +10,7 @@ export default function About(): JSX.Element {
   }
 
   return (
-    <div className="bg-slate-600 h-screen overflow-hidden">
+    <div className="bg-slate-400 h-screen overflow-hidden bg-code bg-contain">
       <div className="tile-container flex-wrap flex ">{tiles}</div>
       <div>
         <CircleWithShadow />

@@ -9,7 +9,7 @@ export default function Tile(): JSX.Element {
 
   return (
     <div
-      className={`container-card outline-2 outline outline-slate-800 m-[1px] group [perspective:2000px] transition-all duration-1000 [transform-style:preserve-3d] ${
+      className={`container-card outline-2 outline outline-slate-400 m-[1px] group [perspective:2000px] transition-all duration-1000 [transform-style:preserve-3d] ${
         isFlipped && "scale-down"
       } `}
       onMouseEnter={toggleFlip}
