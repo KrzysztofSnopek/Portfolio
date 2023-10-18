@@ -2,7 +2,7 @@ import React from "react";
 import CircleWithShadow from "../Components/Tile";
 
 export default function About(): JSX.Element {
-  const numTiles = 100;
+  const numTiles = 240;
   const tiles = [];
 
   for (let i = 0; i < numTiles; i++) {
