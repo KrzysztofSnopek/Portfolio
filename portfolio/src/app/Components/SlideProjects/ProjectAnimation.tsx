@@ -1,6 +1,6 @@
 import { useSpring, animated as a } from "@react-spring/web";
 
-export default function Project1({ children, isVisible }: any) {
+export default function ProjectAnimation({ children, isVisible }: any) {
   const animatedProps = useSpring({
     opacity: isVisible ? 1 : 0,
     x: isVisible ? 0 : 1200,

@@ -4,12 +4,6 @@ import Link from "next/link";
 import { cardProps } from "../Helpers/cardProps";
 
 export default function ProjectCard(cardProps: cardProps) {
-  //   const cardClassName = `relative flex center flex-end px-8 mx-12 h-[${cardProps.cardData.height}px] w-[calc(${cardProps.cardData.height}px / 1.5)]`; // perspective: 2500px
-  //   const wrapperClassName = `absolute w-full -z-10 card-transition`;
-  //   const coverImageClassName = `w-full h-full object-cover`;
-  //   const characterClassName = "w-full -z-10 absolute card-transition opacity-0";
-  //   const titleClassName = "w-full";
-
   const heightVariants: Record<number, string> = {
     210: "h-[210px] w-[140px]",
     300: "h-[300px] w-[200px]",
