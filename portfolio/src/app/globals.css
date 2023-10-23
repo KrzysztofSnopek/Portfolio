@@ -120,3 +120,66 @@
 .slide-in.active {
   right: 0;
 }
+
+@layer utilities {
+  .perspective {
+    perspective: 2500px;
+  }
+
+  .card-transition {
+    transition: all 0.5s;
+  }
+
+  .character-transform {
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+  }
+
+  .transform-title {
+    transform: translate3d(0%, -50px, 100px);
+  }
+
+  .transition-title {
+    width: 100%;
+    transition: transform 0.5s;
+  }
+
+  .wrapper-transform {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  }
+
+  .wrapper-transition {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 120px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+  }
+
+  .wrapper-shadow-before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      transparent 46%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19) 97%
+    );
+  }
+
+  .wrapper-shadow-after {
+    bottom: 0;
+    opacity: 1;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 56%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19) 97%
+    );
+  }
+}
