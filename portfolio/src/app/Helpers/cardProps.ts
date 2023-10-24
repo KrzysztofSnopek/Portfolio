@@ -18,5 +18,5 @@ export const card1: cardProps["cardData"] = {
     "https://ggayane.github.io/css-experiments/cards/dark_rider-title.png",
   title: "Dark Rider",
   cardHref: "",
-  height: 300,
+  height: 210,
 };
