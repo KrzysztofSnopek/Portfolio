@@ -11,17 +11,31 @@ type SelectedComponent = "Skills" | "About" | "Project1" | null;
 export default function Projects(): JSX.Element {
   const [selectedComponent, setSelectedComponent] =
     useState<SelectedComponent>(null);
-  const [animationStart, setAnimationStart] = useState(false);
+  const [animationStart, setAnimationStart] = useState<boolean>(false);
+  const [disableButtons, setDisableButtons] = useState<boolean>(false);
 
   const handleCardClick = (component: SelectedComponent) => {
     if (selectedComponent === component) {
       setAnimationStart(false);
-      setSelectedComponent(null);
+      setDisableButtons(true);
+
+      setTimeout(() => {
+        setSelectedComponent(null);
+        setDisableButtons(false);
+      }, 1500);
     } else if (selectedComponent === null) {
+      setDisableButtons(true);
+      setTimeout(() => {
+        setDisableButtons(false);
+      }, 1500);
       setSelectedComponent(component);
       setAnimationStart(true);
     } else if (selectedComponent !== component) {
       setAnimationStart(false);
+      setDisableButtons(true);
+      setTimeout(() => {
+        setDisableButtons(false);
+      }, 3000);
       setTimeout(() => {
         setSelectedComponent(component);
         setAnimationStart(true);
@@ -34,18 +48,34 @@ export default function Projects(): JSX.Element {
       <div className="flex justify-center flex-col items-center">
         <h2 className="text-2xl p-8">Projects</h2>
         <div className="flex z-40">
-          <div className="" onClick={() => handleCardClick("Skills")}>
+          <button
+            className={`${disableButtons && "opacity-50"}`}
+            onClick={() => handleCardClick("Skills")}
+            disabled={disableButtons}
+          >
             <ProjectCard cardData={card1} />
-          </div>
-          <div className="" onClick={() => handleCardClick("About")}>
+          </button>
+          <button
+            className={`${disableButtons && "opacity-50"}`}
+            onClick={() => handleCardClick("About")}
+            disabled={disableButtons}
+          >
             <ProjectCard cardData={card1} />
-          </div>
-          <div className="" onClick={() => handleCardClick("Project1")}>
+          </button>
+          <button
+            className={`${disableButtons && "opacity-50"}`}
+            onClick={() => handleCardClick("Project1")}
+            disabled={disableButtons}
+          >
             <ProjectCard cardData={card1} />
-          </div>
-          <div className="" onClick={() => handleCardClick("About")}>
+          </button>
+          <button
+            className={`${disableButtons && "opacity-50"}`}
+            onClick={() => handleCardClick("About")}
+            disabled={disableButtons}
+          >
             <ProjectCard cardData={card1} />
-          </div>
+          </button>
         </div>
       </div>
       <div className="h-screen flex">
