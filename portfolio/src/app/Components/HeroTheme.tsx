@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "./Nav";
 import AnimatedLetters from "./AnimatedLetters";
 import generateDelays from "@/app/Helpers/generateDelays";
 import Socials from "./Socials";
+import NavHamburger from "./NavHamburger";
 
 export interface HeroProps {
   scrollToComponent: (component: string) => void;
 }
 
 export default function Hero({ scrollToComponent }: HeroProps) {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   const headerText = "KRZYSZTOF";
   const splitHeaderText = headerText.split("");
   const headerText2 = "SNOPEK";
@@ -17,11 +20,24 @@ export default function Hero({ scrollToComponent }: HeroProps) {
   const parText = "Future Web Developer";
   const splitParText = parText.split("");
 
+  function toggleIsOpen() {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <div className="h-full bg-slate-800 text-white flex justify-center">
-      <div className="flex absolute right-8 top-1/2 transform -translate-y-1/2">
-        <Nav scrollToComponent={scrollToComponent} />
+      <div
+        className="flex absolute right-8 top-16 transform -translate-y-1/2"
+        onClick={toggleIsOpen}
+      >
+        <NavHamburger />
       </div>
+
+      {isOpen && (
+        <div className="flex absolute right-8 top-1/2 transform -translate-y-1/2">
+          <Nav scrollToComponent={scrollToComponent} />
+        </div>
+      )}
 
       <div className="flex flex-col relative z-10">
         <div className="flex items-start justify-start mt-16 min-h-screen flex-col h-4/5">
