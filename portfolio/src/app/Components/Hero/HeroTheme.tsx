@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Nav from "./Nav";
+import Nav from "../Nav/Nav";
 import AnimatedLetters from "./AnimatedLetters";
 import generateDelays from "@/app/Helpers/generateDelays";
 import Socials from "./Socials";
-import NavHamburger from "./NavHamburger";
+import NavHamburger from "../Nav/NavHamburger";
 
 export interface HeroProps {
   scrollToComponent: (component: string) => void;

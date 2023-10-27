@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import Skills from "@/app/Layouts/Skills";
 import ProjectCard from "../Components/ProjectCard";
 import { card1 } from "../Helpers/cardProps";

@@ -24,6 +24,8 @@
     "@react-spring/web": "^9.7.3",
     "@react-three/drei": "^9.87.1",
     "@react-three/fiber": "^8.14.5",
+    "classnames": "^2.3.2",
+    "framer-motion": "^10.16.4",
     "lodash": "^4.17.21",
     "lodash.debounce": "^4.0.8",
     "next": "13.5.4",

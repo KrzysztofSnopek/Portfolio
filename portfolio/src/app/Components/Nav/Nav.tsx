@@ -1,4 +1,4 @@
-import { HeroProps } from "./HeroTheme";
+import { HeroProps } from "../Hero/HeroTheme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {

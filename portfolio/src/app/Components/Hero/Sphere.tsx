@@ -32,7 +32,7 @@ const SphereComponent: React.FC<SphereComponentProps> = ({ canvasSize }) => {
       <ambientLight intensity={6} />
       <Sphere
         args={[1, 100, 200]}
-        scale={[0.9 * aspectRatio, 0.9 * aspectRatio, 1]}
+        scale={[0.4 * aspectRatio, 5 * aspectRatio, 1.2]}
       >
         <MeshDistortMaterial
           color="#1f2733"

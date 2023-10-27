@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    height: 100%;
+    --color-primary: rgb(224 231 255);
+  }
+}
+
 @layer utilities {
   @keyframes wave-color {
     0% {
