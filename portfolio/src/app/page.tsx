@@ -50,6 +50,7 @@ const App: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2, ease: "backIn" }}
+            className="h-screen w-full"
           >
             <About />
           </motion.div>

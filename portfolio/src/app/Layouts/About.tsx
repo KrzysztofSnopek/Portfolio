@@ -30,7 +30,7 @@ function App() {
   }, [activeItem]);
 
   return (
-    <div className="w-3/4 flex justify-center m-auto bg-primary">
+    <div className="flex justify-center items-center m-auto bg-primary h-screen">
       <div className="flex h-full w-full items-center justify-center">
         <div className="w-[1200px] max-w-full">
           <ul
