@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { persons } from "../Helpers/valuableInfos";
 import { useEffect, useRef, useState } from "react";
+import StarsCanvas from "../Helpers/Starbackground";
 
 function App() {
   const [activeItem, setActiveItem] = useState(5);
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <div className="flex justify-center items-center m-auto bg-primary h-screen">
+      <StarsCanvas />
       <div className="flex h-full w-full items-center justify-center">
         <div className="w-[1200px] max-w-full">
           <ul

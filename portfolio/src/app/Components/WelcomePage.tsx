@@ -20,7 +20,7 @@ export const WelcomePage = () => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 1.5,
+        staggerChildren: 1.2,
       },
     },
   };
