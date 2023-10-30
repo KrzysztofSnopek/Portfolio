@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Skills from "@/app/Layouts/Skills";
 import ProjectCard from "../Components/ProjectCard";
 import { card1 } from "../Helpers/cardProps";
-import About from "./About";
+import About from "./Hero";
 import ProjectAnimation from "../Components/SlideProjects/ProjectAnimation";
 import Project1 from "../Components/SlideProjects/Project1";
 

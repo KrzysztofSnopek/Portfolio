@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import HeroTheme from "./Components/Hero/HeroTheme";
-import About from "./Layouts/About";
+import About from "./Layouts/Hero";
 import Contact from "./Layouts/Contact";
 import Projects from "./Layouts/Projects";
 import PhotoBlob from "./Components/Hero/PhotoBlob";
@@ -13,6 +13,8 @@ import Skills from "./Layouts/Skills";
 import Project1 from "./Components/SlideProjects/Project1";
 import { WelcomePage } from "./Components/WelcomePage";
 import { motion, AnimatePresence, useTransform } from "framer-motion";
+import Hero from "./Layouts/Hero";
+import StarsCanvas from "./Helpers/Starbackground";
 
 const App: React.FC = () => {
   const [activeComponent, setActiveComponent] = useState<string | null>(null);
@@ -52,7 +54,7 @@ const App: React.FC = () => {
             transition={{ duration: 2, ease: "backIn" }}
             className="h-screen w-full"
           >
-            <About />
+            <Hero />
           </motion.div>
         </AnimatePresence>
         // <AnimatePresence>

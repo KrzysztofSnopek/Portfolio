@@ -3,7 +3,7 @@ import { persons } from "../Helpers/valuableInfos";
 import { useEffect, useRef, useState } from "react";
 import StarsCanvas from "../Helpers/Starbackground";
 
-function App() {
+function Hero() {
   const [activeItem, setActiveItem] = useState(5);
   const wrapperRef = useRef<HTMLUListElement | null>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -32,8 +32,7 @@ function App() {
 
   return (
     <div className="flex justify-center items-center m-auto bg-primary h-screen">
-      <StarsCanvas />
-      <div className="flex h-full w-full items-center justify-center">
+      <div className="flex h-full w-full items-center justify-center pointer-events-auto">
         <div className="w-[1200px] max-w-full">
           <ul
             ref={wrapperRef}
@@ -48,7 +47,8 @@ function App() {
                   "md:[transition:width_var(--transition,200ms_ease-in)]",
                   "md:before-block before:absolute before:bottom-0 before:left-[-10px] before:right-[-10px] before:top-0 before:hidden before:bg-primary",
                   "md:[&:not(:hover),&:not(:first),&:not(:last)]:group-hover:w-[7%] md:hover:w-[12%]",
-                  "first:pointer-events-none last:pointer-events-none md:[&_img]:first:opacity-0 md:[&_img]:last:opacity-0"
+                  "first:pointer-events-none last:pointer-events-none md:[&_img]:first:opacity-0 md:[&_img]:last:opacity-0",
+                  activeItem === index ? "opacity-100 " : "opacity-50"
                 )}
                 key={person.name}
               >
@@ -63,7 +63,7 @@ function App() {
                   <div
                     className={classNames(
                       "inset-0 opacity-25 duration-300 before:absolute before:bottom-0 before:left-[-546px] before:right-0 before:top-[-148px] before:z-10 before:bg-texture  after:bottom-[28px] after:left-0 after:right-[-434px] after:top-0 after:z-10 after:bg-texture md:absolute md:transition-opacity",
-                      activeItem === index ? "md:opacity-25" : "md:opacity-0"
+                      activeItem === index ? "md:opacity-25 " : "md:opacity-0"
                     )}
                   />
                   <div
@@ -91,4 +91,4 @@ function App() {
   );
 }
 
-export default App;
+export default Hero;

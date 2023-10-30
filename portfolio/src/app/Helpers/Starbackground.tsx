@@ -11,8 +11,8 @@ const Starbackground = (props: any) => {
   );
 
   useFrame((state, delta) => {
-    ref.current.rotation.x -= delta / 10;
-    ref.current.rotation.y -= delta / 15;
+    ref.current.rotation.x -= delta / 30;
+    ref.current.rotation.y -= delta / 45;
   });
 
   return (
@@ -20,7 +20,7 @@ const Starbackground = (props: any) => {
       <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
         <PointMaterial
           transparent
-          color="$fff"
+          color="#5338ac"
           size={0.002}
           sizeAttenuation={true}
           dethWrite={false}
@@ -32,7 +32,7 @@ const Starbackground = (props: any) => {
 
 const StarsCanvas = () => {
   return (
-    <div className="w-full h-auto fixed inset-0 z-[20]">
+    <div className="w-full h-auto fixed inset-0 pointer-events-none">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Starbackground />
