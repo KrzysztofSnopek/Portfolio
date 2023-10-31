@@ -15,6 +15,8 @@ import { WelcomePage } from "./Components/WelcomePage";
 import { motion, AnimatePresence, useTransform } from "framer-motion";
 import Hero from "./Layouts/Hero";
 import StarsCanvas from "./Helpers/Starbackground";
+import ParallaxStars from "./Layouts/ParallaxStars";
+import ParallaxContainer from "./Layouts/ParallaxContainer";
 
 const App: React.FC = () => {
   const [activeComponent, setActiveComponent] = useState<string | null>(null);
@@ -42,6 +44,7 @@ const App: React.FC = () => {
             animate={{ opacity: 1 }}
             whileTap={{ opacity: 0 }}
             transition={{ duration: 2, ease: "backOut" }}
+            className="w-full h-screen"
           >
             <WelcomePage />
           </motion.div>
@@ -55,6 +58,7 @@ const App: React.FC = () => {
             className="h-screen w-full"
           >
             <Hero />
+            <ParallaxContainer />
           </motion.div>
         </AnimatePresence>
         // <AnimatePresence>
@@ -74,7 +78,6 @@ const App: React.FC = () => {
         //     <div className="absolute top-1/2 left-[8vw] transform -translate-y-1/2 w-1/3 z-40">
         //       <div className="absolute top-1/2 transform -translate-y-1/2 left-1/2 -translate-x-1/2">
         //         <div
-        //           id="here"
         //           className="h-[360px] w-[360px] bg-slate-800 flex justify-center items-center rounded-full"
         //         >
         //           <div className="h-72 w-72 relative">

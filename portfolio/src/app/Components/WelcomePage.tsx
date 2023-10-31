@@ -32,7 +32,7 @@ export const WelcomePage = () => {
 
   return (
     <>
-      <motion.div className="h-screen w-full bg-[#130c2b] flex flex-col items-center justify-center">
+      <motion.div className="h-screen w-full bg-[#130c2b] flex flex-col items-center justify-center cursor-pointer z-20">
         <motion.div
           className="flex flex-col items-start justify-start mt-16"
           variants={container}

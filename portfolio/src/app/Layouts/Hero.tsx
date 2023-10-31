@@ -1,7 +1,6 @@
 import classNames from "classnames";
 import { persons } from "../Helpers/valuableInfos";
 import { useEffect, useRef, useState } from "react";
-import StarsCanvas from "../Helpers/Starbackground";
 
 function Hero() {
   const [activeItem, setActiveItem] = useState(5);
