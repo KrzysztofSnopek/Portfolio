@@ -32,7 +32,7 @@ function Hero() {
   return (
     <div className="flex justify-center items-center m-auto bg-primary h-screen">
       <div className="flex h-full w-full items-center justify-center pointer-events-auto">
-        <div className="w-[1200px] max-w-full">
+        <div className="w-[1400px] max-w-full">
           <ul
             ref={wrapperRef}
             className="group flex flex-col gap-3 md:h-[640px] md:flex-row md:gap-[1.5%]"
@@ -42,7 +42,7 @@ function Hero() {
                 onClick={() => setActiveItem(index)}
                 aria-current={activeItem === index}
                 className={classNames(
-                  "relative cursor-pointer md:w-[8%] md:first:w-[1%] md:last:w-[1%] md:[&[aria-current='true']]:w-[48%]",
+                  "relative cursor-pointer md:w-[4%] md:first:w-[1%] md:last:w-[1%] md:[&[aria-current='true']]:w-[68%]",
                   "md:[transition:width_var(--transition,200ms_ease-in)]",
                   "md:before-block before:absolute before:bottom-0 before:left-[-10px] before:right-[-10px] before:top-0 before:hidden before:bg-primary",
                   "md:[&:not(:hover),&:not(:first),&:not(:last)]:group-hover:w-[7%] md:hover:w-[12%]",
@@ -53,7 +53,7 @@ function Hero() {
               >
                 <div className="relative h-full w-full overflow-hidden rounded-2xl">
                   <img
-                    className="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[590px] md:-translate-x-1/2"
+                    className="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[1000px] md:-translate-x-1/2"
                     src={person.img}
                     alt={person.name}
                     width="590px"
