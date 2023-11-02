@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Points, PointMaterial, Preload } from "@react-three/drei";
+import { Points, PointMaterial } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
 
 const Starbackground = (props: any) => {
@@ -21,7 +21,7 @@ const Starbackground = (props: any) => {
         <PointMaterial
           transparent
           color="#5338ac"
-          size={0.002}
+          size={0.003}
           sizeAttenuation={true}
           dethWrite={false}
         />

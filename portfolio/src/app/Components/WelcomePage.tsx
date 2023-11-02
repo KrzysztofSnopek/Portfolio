@@ -34,7 +34,7 @@ export const WelcomePage = () => {
     <>
       <motion.div className="h-screen w-full bg-[#130c2b] flex flex-col items-center justify-center cursor-pointer z-20">
         <motion.div
-          className="flex flex-col items-start justify-start mt-16"
+          className="flex flex-col items-start justify-start mt-16 z-20"
           variants={container}
           initial="hidden"
           animate="show"
@@ -56,7 +56,7 @@ export const WelcomePage = () => {
             </motion.div>
           </h1>
 
-          <motion.p className="text-4xl z-20 text-green-300" variants={item}>
+          <motion.p className="text-4xl" variants={item}>
             <AnimatedLetters
               letterClass="animate-wave-infinite"
               splitText={splitParText}
