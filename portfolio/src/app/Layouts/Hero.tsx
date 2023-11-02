@@ -35,7 +35,7 @@ function Hero() {
         <div className="w-[1400px] max-w-full">
           <ul
             ref={wrapperRef}
-            className="group flex flex-col gap-3 md:h-[640px] md:flex-row md:gap-[1.5%]"
+            className="group/list flex flex-col gap-3 md:h-[640px] md:flex-row md:gap-[1.5%]"
           >
             {persons.map((person, index) => (
               <li
@@ -45,9 +45,11 @@ function Hero() {
                   "relative cursor-pointer md:w-[4%] md:first:w-[1%] md:last:w-[1%] md:[&[aria-current='true']]:w-[68%]",
                   "md:[transition:width_var(--transition,200ms_ease-in)]",
                   "md:before-block before:absolute before:bottom-0 before:left-[-10px] before:right-[-10px] before:top-0 before:hidden before:bg-primary",
-                  "md:[&:not(:hover),&:not(:first),&:not(:last)]:group-hover:w-[7%] md:hover:w-[12%]",
+                  "md:[&:not(:hover),&:not(:first),&:not(:last)]:group-hover/list:w-[7%] md:hover:w-[12%]",
                   "first:pointer-events-none last:pointer-events-none md:[&_img]:first:opacity-0 md:[&_img]:last:opacity-0",
-                  activeItem === index ? "opacity-100 " : "opacity-50"
+                  activeItem === index
+                    ? "opacity-100 "
+                    : "opacity-50 group/item"
                 )}
                 key={person.name}
               >
@@ -77,6 +79,20 @@ function Hero() {
                       {person.title}
                     </p>
                     <p className="text-lg font-bold md:text-4xl">
+                      {person.name}
+                    </p>
+                  </div>
+                  <div
+                    className={classNames(
+                      "absolute h-[640px] w-[154px] flex flex-col justify-start items-center p-4 text-4xl font-bold z-30 opacity-0",
+                      activeItem !== index &&
+                        "md:group-hover/item:opacity-100 transition-[opacity]"
+                    )}
+                  >
+                    <p className="absolute top-6 left-1/2 -translate-x-1/2">
+                      H
+                    </p>
+                    <p className="-rotate-90 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
                       {person.name}
                     </p>
                   </div>
