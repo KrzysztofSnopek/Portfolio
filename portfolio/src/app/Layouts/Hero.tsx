@@ -29,6 +29,8 @@ function Hero() {
     };
   }, [activeItem]);
 
+  const homeIcon = "faHome";
+
   return (
     <div className="flex justify-center items-center m-auto bg-primary h-screen">
       <div className="flex h-full w-full items-center justify-center pointer-events-auto">

@@ -10,8 +10,6 @@ export default function HeroParallax() {
 
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "250%"]);
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "150%"]);
-  //   const backgroundX = useTransform(scrollXProgress, [0, 1], ["0%", "250%"]);
-  //   const textX = useTransform(scrollXProgress, [0, 1], ["0%", "150%"]);
 
   return (
     <div

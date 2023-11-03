@@ -17,6 +17,7 @@ import Hero from "./Layouts/Hero";
 import StarsCanvas from "./Helpers/Starbackground";
 import ParallaxStars from "./Layouts/ParallaxStars";
 import ParallaxContainer from "./Layouts/ParallaxContainer";
+import MovingStarsLayout from "./Layouts/MovingStarsLayout";
 
 const App: React.FC = () => {
   const [activeComponent, setActiveComponent] = useState<string | null>(null);
@@ -40,7 +41,7 @@ const App: React.FC = () => {
         <AnimatePresence>
           <motion.div
             onClick={handleHideWelcome}
-            initial={{ opacity: 0 }}
+            // initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             whileTap={{ opacity: 0 }}
             transition={{ duration: 2, ease: "backOut" }}
@@ -54,11 +55,12 @@ const App: React.FC = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 2, ease: "backIn" }}
+            transition={{ duration: 1, ease: "backIn" }}
             className="h-screen w-full"
           >
             <Hero />
             <ParallaxContainer />
+            <MovingStarsLayout />
           </motion.div>
         </AnimatePresence>
         // <AnimatePresence>
