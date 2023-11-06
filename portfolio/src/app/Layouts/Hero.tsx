@@ -1,7 +1,6 @@
 import classNames from "classnames";
-import { persons } from "../Helpers/valuableInfos";
+import { mainSections } from "../Helpers/mainSections";
 import { useEffect, useRef, useState } from "react";
-import MovingStarsLayout from "./MovingStarsLayout";
 
 function Hero() {
   const [activeItem, setActiveItem] = useState(5);
@@ -30,8 +29,6 @@ function Hero() {
     };
   }, [activeItem]);
 
-  const homeIcon = "faHome";
-
   return (
     <div className="flex justify-center items-center m-auto h-screen w-full">
       <div className="flex h-full w-full items-center justify-center pointer-events-auto sticky top-0">
@@ -40,7 +37,7 @@ function Hero() {
             ref={wrapperRef}
             className="group/list flex flex-col gap-3 md:h-[640px] md:flex-row md:gap-[1.5%]"
           >
-            {persons.map((person, index) => (
+            {mainSections.map((section, index) => (
               <li
                 onClick={() => setActiveItem(index)}
                 aria-current={activeItem === index}
@@ -54,13 +51,13 @@ function Hero() {
                     ? "opacity-100 "
                     : "opacity-50 group/item"
                 )}
-                key={person.name}
+                key={section.name}
               >
                 <div className="relative h-full w-full overflow-hidden rounded-2xl">
                   <img
                     className="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[1000px] md:-translate-x-1/2"
-                    src={person.img}
-                    alt={person.name}
+                    src={section.img}
+                    alt={section.name}
                     width="590px"
                     height="640px"
                   />
@@ -79,10 +76,10 @@ function Hero() {
                     )}
                   >
                     <p className="text-sm uppercase text-primary md:text-lg">
-                      {person.title}
+                      {section.title}
                     </p>
                     <p className="text-lg font-bold md:text-4xl">
-                      {person.name}
+                      {section.name}
                     </p>
                   </div>
                   <div
@@ -96,7 +93,7 @@ function Hero() {
                       H
                     </p>
                     <p className="-rotate-90 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
-                      {person.name}
+                      {section.name}
                     </p>
                   </div>
                 </div>
