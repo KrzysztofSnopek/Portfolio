@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { persons } from "../Helpers/valuableInfos";
 import { useEffect, useRef, useState } from "react";
+import MovingStarsLayout from "./MovingStarsLayout";
 
 function Hero() {
   const [activeItem, setActiveItem] = useState(5);
@@ -32,8 +33,8 @@ function Hero() {
   const homeIcon = "faHome";
 
   return (
-    <div className="flex justify-center items-center m-auto bg-primary h-screen">
-      <div className="flex h-full w-full items-center justify-center pointer-events-auto">
+    <div className="flex justify-center items-center m-auto h-screen w-full">
+      <div className="flex h-full w-full items-center justify-center pointer-events-auto sticky top-0">
         <div className="w-[1400px] max-w-full">
           <ul
             ref={wrapperRef}

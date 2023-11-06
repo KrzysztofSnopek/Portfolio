@@ -14,9 +14,6 @@ import Project1 from "./Components/SlideProjects/Project1";
 import { WelcomePage } from "./Components/WelcomePage";
 import { motion, AnimatePresence, useTransform } from "framer-motion";
 import Hero from "./Layouts/Hero";
-import StarsCanvas from "./Helpers/Starbackground";
-import ParallaxStars from "./Layouts/ParallaxStars";
-import ParallaxContainer from "./Layouts/ParallaxContainer";
 import MovingStarsLayout from "./Layouts/MovingStarsLayout";
 
 const App: React.FC = () => {
@@ -58,8 +55,7 @@ const App: React.FC = () => {
             transition={{ duration: 1, ease: "backIn" }}
             className="h-screen w-full"
           >
-            <Hero />
-            <ParallaxContainer />
+            {/* <Hero /> */}
             <MovingStarsLayout />
           </motion.div>
         </AnimatePresence>
