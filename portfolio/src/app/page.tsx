@@ -15,6 +15,7 @@ import { WelcomePage } from "./Components/WelcomePage";
 import { motion, AnimatePresence, useTransform } from "framer-motion";
 import Hero from "./Layouts/Hero";
 import MovingStarsLayout from "./Layouts/MovingStarsLayout";
+import MovingStarship from "./Layouts/MovingStars";
 
 const App: React.FC = () => {
   const [activeComponent, setActiveComponent] = useState<string | null>(null);
@@ -53,10 +54,11 @@ const App: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease: "backIn" }}
-            className="h-screen w-full"
+            className="w-full"
           >
             {/* <Hero /> */}
-            <MovingStarsLayout />
+            {/* <MovingStarsLayout /> */}
+            <MovingStarship />
           </motion.div>
         </AnimatePresence>
         // <AnimatePresence>

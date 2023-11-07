@@ -6,7 +6,7 @@ import AnimatedLetters from "./Hero/AnimatedLetters";
 import generateDelays from "../Helpers/generateDelays";
 
 export const WelcomePage = () => {
-  const [isVisible, setIsVisible] = useState<boolean>(true);
+  // const [isVisible, setIsVisible] = useState<boolean>(true);
   const headerText = "KRZYSZTOF";
   const splitHeaderText = headerText.split("");
   const headerText2 = "SNOPEK";
@@ -64,27 +64,6 @@ export const WelcomePage = () => {
             />
           </motion.p>
         </motion.div>
-        {/* <motion.ul variants={container} initial="hidden" animate="show">
-          <motion.li variants={item}>new li</motion.li>
-          <motion.li variants={item}>second li</motion.li>
-          <AnimatePresence>
-            {isVisible && (
-              <motion.div
-                className="w-[150px] h-[150px] bg-red-800"
-                onClick={() => setIsVisible(!isVisible)}
-                variants={item}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{
-                  duration: 1,
-                  staggerChildren: 1,
-                  ease: "backOut",
-                }}
-              ></motion.div>
-            )}
-          </AnimatePresence>
-        </motion.ul> */}
       </motion.div>
     </>
   );
