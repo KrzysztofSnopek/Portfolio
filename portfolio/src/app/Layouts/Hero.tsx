@@ -45,7 +45,7 @@ function Hero() {
                 className={classNames(
                   "relative cursor-pointer md:w-[4%] md:first:w-[1%] md:last:w-[1%] md:[&[aria-current='true']]:w-[68%]",
                   "md:[transition:width_var(--transition,200ms_ease-in)]",
-                  "md:before-block before:absolute before:bottom-0 before:left-[-10px] before:right-[-10px] before:top-0 before:hidden before:bg-primary",
+                  "md:before-block before:absolute before:bottom-0 before:left-[-10px] before:right-[-10px] before:top-0 before:hidden before:bg-secondary",
                   "md:[&:not(:hover),&:not(:first),&:not(:last)]:group-hover/list:w-[7%] md:hover:w-[12%]",
                   "first:pointer-events-none last:pointer-events-none md:[&_img]:first:opacity-0 md:[&_img]:last:opacity-0",
                   activeItem === index
@@ -76,10 +76,14 @@ function Hero() {
                         : "md:translate-x-4 md:opacity-0"
                     )}
                   >
-                    <p className="text-sm uppercase text-primary md:text-lg">
-                      {section.title}
-                    </p>
-                    <p className="text-lg font-bold md:text-4xl">
+                    <div className="relative px-2 inline-block">
+                      <div className="absolute inset-0 bg-accent opacity-70 blur"></div>
+                      <p className="text-sm font-extrabold uppercase text-secondary md:text-lg relative z-10">
+                        {section.title}
+                      </p>
+                    </div>
+
+                    <p className="px-2 text-lg font-bold md:text-4xl drop-shadow-[0_1.2px_1.2px_#7a66bd]">
                       {section.name}
                     </p>
                   </div>
@@ -91,12 +95,12 @@ function Hero() {
                     )}
                   >
                     {section.icon && (
-                      <p className="absolute top-6 left-1/2 -translate-x-1/2">
+                      <p className="absolute top-6 left-1/2 -translate-x-1/2 text-secondary">
                         <FontAwesomeIcon icon={section.icon} />
                       </p>
                     )}
 
-                    <p className="-rotate-90 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
+                    <p className="-rotate-90 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-secondary">
                       {section.name}
                     </p>
                   </div>

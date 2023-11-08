@@ -13,6 +13,8 @@ const config: Config = {
       },
       colors: {
         primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+        accent: "var(--color-accent)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -21,7 +23,7 @@ const config: Config = {
         code: "url('/Images/Code.jpg')",
         smoke: "url('/Images/SmokySky.jpg')",
         texture:
-          "url(/glow-texture.png), radial-gradient(var(--color-primary), transparent 70%)",
+          "url(/glow-texture.png), radial-gradient(var(--color-accent), transparent 90%)",
       },
       boxShadow: {
         flip: "0 0px 0px 100px rgba(51, 65, 85, 1)",
