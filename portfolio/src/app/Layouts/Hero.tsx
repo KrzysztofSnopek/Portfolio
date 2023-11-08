@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { mainSections } from "../Helpers/mainSections";
 import { useEffect, useRef, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Hero() {
   const [activeItem, setActiveItem] = useState(5);
@@ -89,9 +90,12 @@ function Hero() {
                         "md:group-hover/item:opacity-100 transition-[opacity]"
                     )}
                   >
-                    <p className="absolute top-6 left-1/2 -translate-x-1/2">
-                      H
-                    </p>
+                    {section.icon && (
+                      <p className="absolute top-6 left-1/2 -translate-x-1/2">
+                        <FontAwesomeIcon icon={section.icon} />
+                      </p>
+                    )}
+
                     <p className="-rotate-90 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
                       {section.name}
                     </p>

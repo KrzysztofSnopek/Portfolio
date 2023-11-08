@@ -83,7 +83,7 @@ export default function MovingStarship() {
   const planetFiveX = useTransform(
     scrollYProgressIncludingOverlap,
     [0, 0.75, 1],
-    ["50vw", "65vw", "90vw"]
+    ["50vw", "65vw", "-10vw"]
   );
   const planetFiveY = useTransform(
     scrollYProgressIncludingOverlap,
