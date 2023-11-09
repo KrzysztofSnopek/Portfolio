@@ -2,8 +2,19 @@ import { useTransform, useScroll, motion } from "framer-motion";
 import { useRef } from "react";
 import Planet from "../Helpers/Planet";
 import Hero from "./Hero";
+import { staggerItem } from "../Components/WelcomePage";
 
-export default function MovingStarship() {
+export const staggerContainer = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+    },
+  },
+};
+
+export default function MovingStar() {
   const targetRef = useRef<HTMLDivElement | null>(null);
   const extendedRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
@@ -179,7 +190,12 @@ export default function MovingStarship() {
         <div ref={extendedRef} className="w-full mb-[100vh]">
           <div className="">
             <div className="flex justify-center">
-              <motion.div className="origin-top">
+              <motion.div
+                className="origin-top"
+                variants={staggerContainer}
+                initial="hidden"
+                animate="show"
+              >
                 <motion.div>
                   <motion.div
                     style={{
@@ -197,6 +213,7 @@ export default function MovingStarship() {
                       x: planetOneX,
                       y: planetOneY,
                     }}
+                    variants={staggerItem}
                   >
                     <Planet size={600} color="black" />
                   </motion.div>
@@ -207,6 +224,7 @@ export default function MovingStarship() {
                       x: planetTwoX,
                       y: planetTwoY,
                     }}
+                    variants={staggerItem}
                   >
                     <Planet size={300} color="red" />
                   </motion.div>
@@ -217,6 +235,7 @@ export default function MovingStarship() {
                       x: planetThreeX,
                       y: planetThreeY,
                     }}
+                    variants={staggerItem}
                   >
                     <Planet size={500} color="blue" />
                   </motion.div>
@@ -227,6 +246,7 @@ export default function MovingStarship() {
                       x: planetFourX,
                       y: planetFourY,
                     }}
+                    variants={staggerItem}
                   >
                     <Planet size={400} color="purple" />
                   </motion.div>
@@ -237,6 +257,7 @@ export default function MovingStarship() {
                       x: planetFiveX,
                       y: planetFiveY,
                     }}
+                    variants={staggerItem}
                   >
                     <Planet size={200} color="white" />
                   </motion.div>
@@ -247,6 +268,7 @@ export default function MovingStarship() {
                       x: planetSixX,
                       y: planetSixY,
                     }}
+                    variants={staggerItem}
                   >
                     <Planet size={500} color="green" />
                   </motion.div>
@@ -257,6 +279,7 @@ export default function MovingStarship() {
                       x: planetSevenX,
                       y: planetSevenY,
                     }}
+                    variants={staggerItem}
                   >
                     <Planet size={400} color="brown" />
                   </motion.div>
@@ -267,6 +290,7 @@ export default function MovingStarship() {
                       x: planetEightX,
                       y: planetEightY,
                     }}
+                    variants={staggerItem}
                   >
                     <Planet size={300} color="#d87321" />
                   </motion.div>
@@ -277,6 +301,7 @@ export default function MovingStarship() {
                       x: planetNineX,
                       y: planetNineY,
                     }}
+                    variants={staggerItem}
                   >
                     <Planet size={300} color="#826451" />
                   </motion.div>
@@ -287,6 +312,7 @@ export default function MovingStarship() {
                       x: planetTenX,
                       y: planetTenY,
                     }}
+                    variants={staggerItem}
                   >
                     <Planet size={400} color="#090001" />
                   </motion.div>

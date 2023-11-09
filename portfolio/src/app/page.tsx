@@ -13,9 +13,7 @@ import Skills from "./Layouts/Skills";
 import Project1 from "./Components/SlideProjects/Project1";
 import { WelcomePage } from "./Components/WelcomePage";
 import { motion, AnimatePresence, useTransform } from "framer-motion";
-import Hero from "./Layouts/Hero";
-import MovingStarsLayout from "./Layouts/MovingStarsLayout";
-import MovingStarship from "./Layouts/MovingStars";
+import MovingStars from "./Layouts/MovingStars";
 
 const App: React.FC = () => {
   const [activeComponent, setActiveComponent] = useState<string | null>(null);
@@ -39,7 +37,6 @@ const App: React.FC = () => {
         <AnimatePresence>
           <motion.div
             onClick={handleHideWelcome}
-            // initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             whileTap={{ opacity: 0 }}
             transition={{ duration: 2, ease: "backOut" }}
@@ -56,9 +53,7 @@ const App: React.FC = () => {
             transition={{ duration: 1, ease: "backIn" }}
             className="w-full"
           >
-            {/* <Hero /> */}
-            {/* <MovingStarsLayout /> */}
-            <MovingStarship />
+            <MovingStars />
           </motion.div>
         </AnimatePresence>
         // <AnimatePresence>
