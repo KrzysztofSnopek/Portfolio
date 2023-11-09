@@ -95,14 +95,20 @@ function Hero() {
                     )}
                   >
                     {section.icon && (
-                      <p className="absolute top-6 left-1/2 -translate-x-1/2 text-secondary">
-                        <FontAwesomeIcon icon={section.icon} />
-                      </p>
+                      <div className="relative p-4 inline-block">
+                        <div className="absolute top-6 inset-0 bg-white opacity-70 blur rounded-full"></div>
+                        <p className="relative top-4 left-1/2 -translate-x-1/2 text-secondary z-10">
+                          <FontAwesomeIcon icon={section.icon} />
+                        </p>
+                      </div>
                     )}
 
-                    <p className="-rotate-90 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-secondary">
-                      {section.name}
-                    </p>
+                    <div className="relative p-4">
+                      <div className="-rotate-90 absolute top-6 translate-y-48 inset-0 bg-white blur rounded-full"></div>
+                      <p className="-rotate-90 relative top-48 translate-y-2 text-secondary z-10">
+                        {section.name}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </li>
