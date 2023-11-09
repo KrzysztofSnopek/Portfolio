@@ -215,7 +215,7 @@ export default function MovingStar() {
                     }}
                     variants={staggerItem}
                   >
-                    <Planet size={600} color="black" />
+                    <Planet size={600} color="#060311" />
                   </motion.div>
 
                   <motion.div
@@ -226,7 +226,7 @@ export default function MovingStar() {
                     }}
                     variants={staggerItem}
                   >
-                    <Planet size={300} color="red" />
+                    <Planet size={300} color="#0f0b1d" />
                   </motion.div>
 
                   <motion.div
@@ -237,7 +237,7 @@ export default function MovingStar() {
                     }}
                     variants={staggerItem}
                   >
-                    <Planet size={500} color="blue" />
+                    <Planet size={500} color="#200f5c" />
                   </motion.div>
 
                   <motion.div
@@ -248,7 +248,7 @@ export default function MovingStar() {
                     }}
                     variants={staggerItem}
                   >
-                    <Planet size={400} color="purple" />
+                    <Planet size={400} color="#250a86" />
                   </motion.div>
 
                   <motion.div
@@ -259,7 +259,7 @@ export default function MovingStar() {
                     }}
                     variants={staggerItem}
                   >
-                    <Planet size={200} color="white" />
+                    <Planet size={200} color="#060311" />
                   </motion.div>
 
                   <motion.div
@@ -270,7 +270,7 @@ export default function MovingStar() {
                     }}
                     variants={staggerItem}
                   >
-                    <Planet size={500} color="green" />
+                    <Planet size={500} color="#3e2692" />
                   </motion.div>
 
                   <motion.div
@@ -281,7 +281,7 @@ export default function MovingStar() {
                     }}
                     variants={staggerItem}
                   >
-                    <Planet size={400} color="brown" />
+                    <Planet size={400} color="#4c24df" />
                   </motion.div>
 
                   <motion.div
@@ -292,7 +292,7 @@ export default function MovingStar() {
                     }}
                     variants={staggerItem}
                   >
-                    <Planet size={300} color="#d87321" />
+                    <Planet size={300} color="#37247c" />
                   </motion.div>
 
                   <motion.div
@@ -303,7 +303,7 @@ export default function MovingStar() {
                     }}
                     variants={staggerItem}
                   >
-                    <Planet size={300} color="#826451" />
+                    <Planet size={300} color="#280a96" />
                   </motion.div>
 
                   <motion.div
@@ -314,7 +314,7 @@ export default function MovingStar() {
                     }}
                     variants={staggerItem}
                   >
-                    <Planet size={400} color="#090001" />
+                    <Planet size={400} color="#12086b" />
                   </motion.div>
                 </motion.div>
               </motion.div>

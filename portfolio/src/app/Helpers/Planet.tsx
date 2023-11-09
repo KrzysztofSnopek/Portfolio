@@ -21,13 +21,13 @@ const Planet: React.FC<PlanetProps> = ({ size, color }) => {
         boxShadow: `0 0 15px 5px ${color}`,
       }}
     >
-      <div className="absolute top-[3%] left-[3%] w-[95%] h-[95%] bg-white opacity-20 rounded-full" />
-      <div className="absolute top-[25%] left-[23%] w-[15%] h-[15%] bg-white opacity-10 rounded-full" />
-      <div className="absolute top-[55%] left-[66%] w-[25%] h-[25%] bg-white opacity-5 rounded-full" />
-      <div className="absolute bottom-[10%] left-0 w-[100%] h-[100%] bg-white opacity-10 rounded-full"></div>
-      <div className="absolute bottom-[30%] left-0 w-[100%] h-[100%] bg-white opacity-10 rounded-full"></div>
-      <div className="absolute bottom-[50%] left-0 w-[100%] h-[100%] bg-white opacity-10 rounded-full"></div>
-      <div className="absolute bottom-[75%] left-0 w-[100%] h-[100%] bg-white opacity-10 rounded-full"></div>
+      <div className="absolute top-[3%] left-[3%] w-[95%] h-[95%] bg-accent opacity-20 rounded-full" />
+      <div className="absolute top-[25%] left-[23%] w-[15%] h-[15%] bg-accent opacity-10 rounded-full" />
+      <div className="absolute top-[55%] left-[66%] w-[25%] h-[25%] bg-accent opacity-5 rounded-full" />
+      <div className="absolute bottom-[10%] left-0 w-[100%] h-[100%] bg-accent opacity-10 rounded-full"></div>
+      <div className="absolute bottom-[30%] left-0 w-[100%] h-[100%] bg-accent opacity-10 rounded-full"></div>
+      <div className="absolute bottom-[50%] left-0 w-[100%] h-[100%] bg-accent opacity-10 rounded-full"></div>
+      <div className="absolute bottom-[75%] left-0 w-[100%] h-[100%] bg-accent opacity-10 rounded-full"></div>
     </div>
   );
 };
