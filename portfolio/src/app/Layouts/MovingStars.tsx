@@ -3,6 +3,7 @@ import { useRef } from "react";
 import Planet from "../Helpers/Planet";
 import Hero from "./Hero";
 import { staggerItem } from "../Components/WelcomePage";
+import ExpandCircleDownTwoToneIcon from "@mui/icons-material/ExpandCircleDownTwoTone";
 
 export const staggerContainer = {
   hidden: { opacity: 0 },
@@ -184,6 +185,12 @@ export default function MovingStar() {
   );
   const heroScale = useTransform(scrollYProgress, [0, 0.8, 1], [0.01, 0.01, 1]);
 
+  const arrowOpacity = useTransform(
+    scrollYProgressIncludingOverlap,
+    [0, 0.01],
+    [1, 0]
+  );
+
   return (
     <div className="relative z-10 w-full overflow-x-clip overflow-y-clip">
       <section ref={targetRef} className="relative z-10 h-[400vh] w-full">
@@ -315,6 +322,20 @@ export default function MovingStar() {
                     variants={staggerItem}
                   >
                     <Planet size={400} color="#12086b" />
+                  </motion.div>
+
+                  <motion.div
+                    animate={{ scale: 1.2 }}
+                    style={{ opacity: arrowOpacity }}
+                    transition={{
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                      duration: 1.3,
+                    }}
+                    variants={staggerItem}
+                    className="fa-3x absolute top-[90vh] left-1/2 -translate-x-1/2"
+                  >
+                    <ExpandCircleDownTwoToneIcon sx={{ fontSize: 60 }} />
                   </motion.div>
                 </motion.div>
               </motion.div>

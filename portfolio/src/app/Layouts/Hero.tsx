@@ -80,6 +80,7 @@ function Hero() {
                       <div className="absolute inset-0 bg-accent opacity-70 blur"></div>
                       <p className="text-sm font-extrabold uppercase text-secondary md:text-lg relative z-10">
                         {section.title}
+                        #5f5c64
                       </p>
                     </div>
 
