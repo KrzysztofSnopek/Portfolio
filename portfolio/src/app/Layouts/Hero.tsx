@@ -49,7 +49,7 @@ function Hero() {
                   "md:[&:not(:hover),&:not(:first),&:not(:last)]:group-hover/list:w-[7%] md:hover:w-[12%]",
                   "first:pointer-events-none last:pointer-events-none md:[&_img]:first:opacity-0 md:[&_img]:last:opacity-0",
                   activeItem === index
-                    ? "opacity-100 "
+                    ? "opacity-100 cursor-auto"
                     : "opacity-50 group/item"
                 )}
                 key={section.name}
