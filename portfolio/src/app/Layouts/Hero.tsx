@@ -83,9 +83,14 @@ function Hero() {
                       </p>
                     </div>
 
-                    <p className="px-2 text-lg font-bold md:text-4xl drop-shadow-[0_1.2px_1.2px_#7a66bd]">
-                      {section.name}
-                    </p>
+                    <br />
+
+                    <div className="relative px-2 inline-block">
+                      <div className="absolute inset-0 bg-accent opacity-70 blur"></div>
+                      <p className="text-lg font-bold uppercase md:text-4xl relative z-10">
+                        {section.name}
+                      </p>
+                    </div>
                   </div>
                   <div
                     className={classNames(
