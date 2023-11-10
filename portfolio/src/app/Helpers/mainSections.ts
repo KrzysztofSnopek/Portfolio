@@ -7,12 +7,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import ContactComponent from "../Layouts/Contact";
 
 type Section = {
   img: string;
   title: string;
   name: string;
   icon?: IconProp;
+  content?: React.ReactNode | (() => React.ReactNode);
 };
 
 export const mainSections: Section[] = [
@@ -56,6 +58,7 @@ export const mainSections: Section[] = [
     title: "Please do message me :)",
     name: "Contact",
     icon: faPhone,
+    content: ContactComponent,
   },
   {
     img: "",

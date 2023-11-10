@@ -93,6 +93,14 @@ function Hero() {
                         {section.name}
                       </p>
                     </div>
+
+                    {section.content && (
+                      <div>
+                        {typeof section.content === "function"
+                          ? section.content()
+                          : section.content}
+                      </div>
+                    )}
                   </div>
                   <div
                     className={classNames(
