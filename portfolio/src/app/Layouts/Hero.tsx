@@ -72,7 +72,7 @@ function Hero() {
                   />
                   <div
                     className={classNames(
-                      "left-8 top-8 w-[590px] p-4 transition-[transform,opacity] md:absolute md:p-0",
+                      "left-8 top-8 w-[90%] p-4 transition-[transform,opacity] md:absolute md:p-0",
                       activeItem === index
                         ? "md:translate-x-0 md:opacity-100 cursor-auto"
                         : "md:translate-x-4 md:opacity-0"

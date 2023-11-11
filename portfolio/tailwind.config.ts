@@ -15,6 +15,8 @@ const config: Config = {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
         accent: "var(--color-accent)",
+        purpleaccent: "var(--color-purpleaccent)",
+        lightpurpleaccent: "var(--color-lightpurpleaccent)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
