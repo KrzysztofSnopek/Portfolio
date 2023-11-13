@@ -12,9 +12,9 @@ export default function CopyToClipboardIcon() {
   return (
     <button onClick={handleClick}>
       {isClicked ? (
-        <FontAwesomeIcon icon={faCheck} style={{ color: "#6247bf" }} />
+        <FontAwesomeIcon icon={faCheck} style={{ color: "#130c2b" }} />
       ) : (
-        <FontAwesomeIcon icon={faCopy} style={{ color: "#5f5c64" }} />
+        <FontAwesomeIcon icon={faCopy} style={{ color: "#6247bf" }} />
       )}
     </button>
   );

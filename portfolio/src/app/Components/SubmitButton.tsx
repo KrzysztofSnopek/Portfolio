@@ -57,7 +57,7 @@ const SubmitButton = ({ state }: { state: boolean }) => {
       }}
       onMouseEnter={scramble}
       onMouseLeave={stopScramble}
-      className="group relative overflow-hidden rounded-lg border-[1px] border-primary bg-purpleaccent px-4 py-2 mt-4 font-mono font-medium uppercase text-lightpurpleaccent transition-colors hover:text-indigo-200 flex justify-center opacity-80 hover:opacity-100"
+      className="group relative overflow-hidden rounded-lg border-[1px] border-primary bg-purpleaccent px-4 py-2 mt-6 font-mono font-medium uppercase text-lightpurpleaccent transition-colors hover:text-indigo-200 flex justify-center opacity-80 hover:opacity-100"
     >
       <div className="relative z-10 flex items-center gap-2">
         <span>{text}</span>

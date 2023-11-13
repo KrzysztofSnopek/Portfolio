@@ -1,34 +1,36 @@
-import React, { useEffect } from "react";
-import ClipboardJS from "clipboard";
-import CopyToClipboardIcon from "../Helpers/CopyToClipboardIcon";
+import React from "react";
+import CopyToClipboardButton from "../Helpers/CopyToClipboardButton";
+import {
+  faDiscord,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function ContactDetails() {
-  useEffect(() => {
-    const clipboard1 = new ClipboardJS("#copy-button-1");
-
-    return () => {
-      clipboard1.destroy();
-    };
-  }, []);
-
   return (
-    <div className="flex flex-col space-y-16 absolute right-0 top-28 justify-items-end items-end">
-      <div className="group flex relative">
-        <span
-          className="bg-primary text-lightpurpleaccent px-2 py-1 rounded-lg group-hover:rounded-l-none group-hover:pl-4"
-          data-clipboard-target="#copy-target-1"
-          id="copy-button-1"
-        >
-          Button
-        </span>
-        <span
-          className="group-hover:opacity-100 transition-opacity duration-500 bg-primary flex px-2 py-1 text-lightpurpleaccent rounded-l-lg absolute right-full opacity-0 mx-auto w-[150%] whitespace-nowrap"
-          id="copy-target-1"
-        >
-          <p className="px-2">my phone</p>
-          <CopyToClipboardIcon />
-        </span>
-      </div>
+    <div className="flex flex-col space-y-12 absolute right-0 top-36 justify-items-end items-end">
+      <CopyToClipboardButton
+        icon={faPhone}
+        text={"+48 668 698 369"}
+        index={0}
+      />
+      <CopyToClipboardButton
+        icon={faEnvelope}
+        text={"krzysztof.snopek1@gmail.com"}
+        index={1}
+      />
+      <CopyToClipboardButton
+        icon={faGithub}
+        link={"https://github.com/KrzysztofSnopek"}
+        index={2}
+      />
+      <CopyToClipboardButton
+        icon={faLinkedin}
+        link={"https://www.linkedin.com/in/krzysztof-snopek-49224a238/"}
+        index={3}
+      />
+      <CopyToClipboardButton icon={faDiscord} text={"dracola"} index={4} />
     </div>
   );
 }

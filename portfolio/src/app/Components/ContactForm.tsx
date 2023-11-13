@@ -51,7 +51,7 @@ export default function ContactForm() {
         Your message
       </label>
       <textarea
-        rows={3}
+        rows={4}
         id="message"
         name="message"
         className="w-full opacity-40 border bg-purpleaccent border-secondary p-2 rounded-lg shadow-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary focus:opacity-80 resize-none scrollbar-none"
