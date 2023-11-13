@@ -106,7 +106,7 @@ function Hero() {
                     className={classNames(
                       "absolute h-[640px] w-[154px] flex flex-col justify-start items-center p-4 text-4xl font-bold z-30 opacity-0",
                       activeItem === index
-                        ? "cursor-default"
+                        ? "cursor-auto w-0"
                         : "md:group-hover/item:opacity-100 transition-[opacity]"
                     )}
                   >

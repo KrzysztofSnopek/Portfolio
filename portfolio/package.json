@@ -24,7 +24,9 @@
     "@react-spring/web": "^9.7.3",
     "@react-three/drei": "^9.87.1",
     "@react-three/fiber": "^8.14.5",
+    "@shoelace-style/shoelace": "^2.11.2",
     "classnames": "^2.3.2",
+    "clipboard": "^2.0.11",
     "lodash": "^4.17.21",
     "lodash.debounce": "^4.0.8",
     "next": "13.5.4",
@@ -32,7 +34,8 @@
     "react-dom": "^18",
     "react-flip-move": "^3.0.5",
     "styled-components": "^6.1.0",
-    "three": "^0.157.0"
+    "three": "^0.157.0",
+    "tw-elements": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",

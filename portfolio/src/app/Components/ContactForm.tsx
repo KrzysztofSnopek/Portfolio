@@ -6,7 +6,7 @@ export default function ContactForm() {
   const [state, handleSubmit] = useForm("xaygvynb");
   if (state.succeeded) {
     return (
-      <div className="w-full opacity-40 border bg-lightpurpleaccent border-secondary p-2 rounded-lg shadow-sm">
+      <div className="w-[90%] opacity-40 border bg-lightpurpleaccent border-secondary p-2 rounded-lg shadow-sm">
         <p className="flex justify-center text-primary font-bold text-lg p-2">
           Thank you for sending me a message!
         </p>
@@ -14,7 +14,7 @@ export default function ContactForm() {
     );
   }
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col">
+    <form onSubmit={handleSubmit} className="flex flex-col w-[85%]">
       <label htmlFor="name" className="p-2 text-purpleaccent text-xl font-bold">
         Name
       </label>
