@@ -8,6 +8,7 @@ import {
 import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import ContactComponent from "../Layouts/Contact";
+import Resume from "../Layouts/Resume";
 
 type Section = {
   img: string;
@@ -52,6 +53,7 @@ export const mainSections: Section[] = [
     title: "Download my CV here!",
     name: "Resume",
     icon: faDownload,
+    content: Resume,
   },
   {
     img: "https://unsplash.com/photos/5Ne6mMQtIdo/download?force=true&w=590&h=640",

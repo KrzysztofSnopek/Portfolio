@@ -1,13 +1,13 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-const TARGET_TEXT = "Submit";
+const TARGET_TEXT = "Download";
 const CYCLES_PER_LETTER = 2;
 const SHUFFLE_TIME = 50;
 
 const CHARS = "!@#$%^&*():{};|,.<>/?";
 
-const SubmitButton = ({ state }: { state: boolean }) => {
+export default function ResumeDownloadButton() {
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const [text, setText] = useState(TARGET_TEXT);
@@ -47,7 +47,6 @@ const SubmitButton = ({ state }: { state: boolean }) => {
   return (
     <motion.button
       type="submit"
-      disabled={state}
       whileHover={{
         scaleY: 1.05,
       }}
@@ -56,10 +55,12 @@ const SubmitButton = ({ state }: { state: boolean }) => {
       }}
       onMouseEnter={scramble}
       onMouseLeave={stopScramble}
-      className="group relative overflow-hidden rounded-lg border-[1px] border-primary bg-purpleaccent px-4 py-2 mt-6 font-mono font-medium uppercase text-lightpurpleaccent transition-colors hover:text-indigo-200 flex justify-center opacity-80 hover:opacity-100"
+      className="group relative overflow-hidden rounded-lg border-[2px] border-primary bg-purpleaccent px-4 py-2 mt-6 font-mono font-medium text-2xl uppercase text-lightpurpleaccent transition-colors hover:text-indigo-200 flex justify-center opacity-90 hover:opacity-100"
     >
       <div className="relative z-10 flex items-center gap-2">
-        <span>{text}</span>
+        <a href="Images/CV.pdf" download="Krzysztof_Snopek_CV.pdf">
+          {text}
+        </a>
       </div>
       <motion.span
         initial={{
@@ -78,6 +79,4 @@ const SubmitButton = ({ state }: { state: boolean }) => {
       />
     </motion.button>
   );
-};
-
-export default SubmitButton;
+}

@@ -4,12 +4,7 @@ import CopyToClipboardIcon from "../Helpers/CopyToClipboardIcon";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import {
-  motion,
-  AnimatePresence,
-  useTransform,
-  useMotionValue,
-} from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function CopyToClipboardButton({
   icon,
@@ -61,6 +56,7 @@ export default function CopyToClipboardButton({
             exit={{
               transform: "translateX(20px)",
               opacity: 0,
+              transition: { duration: 0.5 },
             }}
           >
             {text && <p className="px-2 pr-4">{text}</p>}
