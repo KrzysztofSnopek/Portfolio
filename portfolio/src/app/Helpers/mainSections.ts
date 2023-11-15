@@ -9,6 +9,7 @@ import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import ContactComponent from "../Layouts/Contact";
 import Resume from "../Layouts/Resume";
+import Skills from "../Layouts/Skills";
 
 type Section = {
   img: string;
@@ -47,6 +48,7 @@ export const mainSections: Section[] = [
     title: "Skills and technologies I am proficient in",
     name: "Skills",
     icon: faHtml5,
+    content: Skills,
   },
   {
     img: "https://unsplash.com/photos/3xNn1zGvBwY/download?force=true&w=590&h=640",
