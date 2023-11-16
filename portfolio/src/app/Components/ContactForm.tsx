@@ -24,6 +24,7 @@ export default function ContactForm() {
         minLength={3}
         maxLength={30}
         required
+        autoComplete="true"
         className="w-full opacity-40 border bg-purpleaccent border-secondary p-2 rounded-lg shadow-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary focus:opacity-80"
       />
 
@@ -40,6 +41,7 @@ export default function ContactForm() {
         minLength={3}
         maxLength={30}
         required
+        autoComplete="true"
         className="w-full opacity-40 border bg-purpleaccent border-secondary p-2 rounded-lg shadow-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary focus:opacity-80"
       />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
