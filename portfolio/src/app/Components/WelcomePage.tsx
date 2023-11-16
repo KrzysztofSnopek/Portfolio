@@ -40,7 +40,7 @@ export const WelcomePage = () => {
         >
           <h1>
             <motion.div
-              className="text-5xl tracking-[.26em]"
+              className="text-5xl tracking-[.34em]"
               variants={staggerItem}
             >
               <AnimatedLetters
@@ -51,7 +51,7 @@ export const WelcomePage = () => {
             </motion.div>
             <motion.div className="text-8xl" variants={staggerItem}>
               <AnimatedLetters
-                letterClass="animate-wave"
+                letterClass="animate-wave tracking-[.065em]"
                 splitText={splitHeaderText2}
                 delays={[0.1]}
               />
@@ -60,7 +60,7 @@ export const WelcomePage = () => {
 
           <motion.p className="text-4xl" variants={staggerItem}>
             <AnimatedLetters
-              letterClass="animate-wave-infinite"
+              letterClass="animate-wave-infinite tracking-[.01em]"
               splitText={splitParText}
               delays={generateDelays(splitParText.length, 0.1, 0.1)}
             />
