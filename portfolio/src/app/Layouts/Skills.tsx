@@ -1,5 +1,20 @@
-import { motion, useAnimate } from "framer-motion";
 import React from "react";
+import { motion, useAnimate } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  BootstrapLogo,
+  Css3Logo,
+  FramerLogo,
+  GithubLogo,
+  HtmlLogo,
+  JavascriptLogo,
+  MaterialuiLogo,
+  MobxLogo,
+  NextJSLogo,
+  ReactLogo,
+  TailwindLogo,
+  TypescriptLogo,
+} from "../Helpers/LogoSvgs";
 
 export default function Skills(): JSX.Element {
   const [scope, animate] = useAnimate();
@@ -13,7 +28,7 @@ export default function Skills(): JSX.Element {
     await animate("#container", { opacity: 0.7, x: 8 });
     await animate(
       "#text",
-      { opacity: 1, y: 55 },
+      { opacity: 1, y: 49 },
       { duration: 0.4, delay: 0.1 }
     );
 
@@ -25,7 +40,7 @@ export default function Skills(): JSX.Element {
     await animate("#container-2", { opacity: 0.7, x: 8 });
     await animate(
       "#text-2",
-      { opacity: 1, y: 155 },
+      { opacity: 1, y: 141 },
       { duration: 0.8, delay: 0.2 }
     );
 
@@ -37,7 +52,7 @@ export default function Skills(): JSX.Element {
     await animate("#container-3", { opacity: 0.7, x: 8 });
     await animate(
       "#text-3",
-      { opacity: 1, y: 30 },
+      { opacity: 1, y: 24 },
       { duration: 0.3, delay: 0.1 }
     );
 
@@ -49,7 +64,7 @@ export default function Skills(): JSX.Element {
     await animate("#container-4", { opacity: 0.7, x: 8 });
     await animate(
       "#text-4",
-      { opacity: 1, y: 114 },
+      { opacity: 1, y: 102 },
       { duration: 0.6, delay: 0.1 }
     );
 
@@ -61,7 +76,7 @@ export default function Skills(): JSX.Element {
     await animate("#container-5", { opacity: 0.7, x: 8 });
     await animate(
       "#text-5",
-      { opacity: 1, y: 69 },
+      { opacity: 1, y: 61 },
       { duration: 0.5, delay: 0.1 }
     );
 
@@ -73,7 +88,7 @@ export default function Skills(): JSX.Element {
     await animate("#container-6", { opacity: 0.7, x: 8 });
     await animate(
       "#text-6",
-      { opacity: 1, y: 157 },
+      { opacity: 1, y: 141 },
       { duration: 0.7, delay: 0.1 }
     );
 
@@ -85,7 +100,7 @@ export default function Skills(): JSX.Element {
     await animate("#container-7", { opacity: 0.7, x: 8 });
     await animate(
       "#text-7",
-      { opacity: 1, y: 94 },
+      { opacity: 1, y: 85 },
       { duration: 0.6, delay: 0.1 }
     );
 
@@ -97,7 +112,7 @@ export default function Skills(): JSX.Element {
     await animate("#container-8", { opacity: 0.7, x: 8 });
     await animate(
       "#text-8",
-      { opacity: 1, y: 60 },
+      { opacity: 1, y: 54 },
       { duration: 0.5, delay: 0.1 }
     );
 
@@ -109,7 +124,7 @@ export default function Skills(): JSX.Element {
     await animate("#container-9", { opacity: 0.7, x: 8 });
     await animate(
       "#text-9",
-      { opacity: 1, y: 154 },
+      { opacity: 1, y: 137 },
       { duration: 0.7, delay: 0.1 }
     );
 
@@ -121,7 +136,7 @@ export default function Skills(): JSX.Element {
     await animate("#container-10", { opacity: 0.7, x: 8 });
     await animate(
       "#text-10",
-      { opacity: 1, y: 157 },
+      { opacity: 1, y: 145 },
       { duration: 0.7, delay: 0.1 }
     );
 
@@ -133,7 +148,7 @@ export default function Skills(): JSX.Element {
     await animate("#container-11", { opacity: 0.7, x: 8 });
     await animate(
       "#text-11",
-      { opacity: 1, y: 222 },
+      { opacity: 1, y: 204 },
       { duration: 0.8, delay: 0.1 }
     );
 
@@ -145,7 +160,7 @@ export default function Skills(): JSX.Element {
     await animate("#container-12", { opacity: 0.7, x: 8 });
     await animate(
       "#text-12",
-      { opacity: 1, y: 83 },
+      { opacity: 1, y: 73 },
       { duration: 0.5, delay: 0.1 }
     );
   };
@@ -156,13 +171,6 @@ export default function Skills(): JSX.Element {
       className="mt-8 -ml-16 flex flex-col"
       onMouseEnter={handleAnimation}
     >
-      {/* <button
-        className="hover:cursor-pointer self-center bg-slate-300 mb-4"
-        onClick={handleAnimation}
-      >
-        click
-      </button> */}
-
       <div className="flex relative">
         {/* box */}
 
@@ -173,10 +181,12 @@ export default function Skills(): JSX.Element {
             rotate: "-90deg",
           }}
         >
-          <div className="h-12 w-12 bg-primary rounded-lg"></div>
+          <div className="h-12 w-12 text-primary rounded-lg flex justify-center items-center">
+            <HtmlLogo />
+          </div>
         </motion.div>
 
-        <motion.div className="relative left-16 top-24 h-32 w-16 overflow-hidden">
+        <motion.div className="relative left-16 top-24 h-28 w-16 overflow-hidden">
           <motion.div
             id="container"
             className="absolute inset-0 bg-lightpurpleaccent blur-[2px] w-12 rounded-full"
@@ -205,10 +215,10 @@ export default function Skills(): JSX.Element {
             rotate: "-90deg",
           }}
         >
-          <div className="h-12 w-12 bg-primary rounded-lg"></div>
+          <JavascriptLogo />
         </motion.div>
 
-        <motion.div className="relative left-16 top-24 h-56 w-16 overflow-hidden">
+        <motion.div className="relative left-16 top-24 h-52 w-16 overflow-hidden">
           <motion.div
             id="container-2"
             className="absolute inset-0 bg-lightpurpleaccent blur-[2px] w-12 rounded-full"
@@ -237,7 +247,7 @@ export default function Skills(): JSX.Element {
             rotate: "-90deg",
           }}
         >
-          <div className="h-12 w-12 bg-primary rounded-lg"></div>
+          <Css3Logo />
         </motion.div>
 
         <motion.div className="relative left-16 top-24 h-24 w-16 overflow-hidden">
@@ -269,10 +279,10 @@ export default function Skills(): JSX.Element {
             rotate: "-90deg",
           }}
         >
-          <div className="h-12 w-12 bg-primary rounded-lg"></div>
+          <TailwindLogo />
         </motion.div>
 
-        <motion.div className="relative left-16 top-24 h-44 w-16 overflow-hidden">
+        <motion.div className="relative left-16 top-24 h-[11rem] w-16 overflow-hidden">
           <motion.div
             id="container-4"
             className="absolute inset-0 bg-lightpurpleaccent blur-[2px] w-12 rounded-full"
@@ -301,10 +311,10 @@ export default function Skills(): JSX.Element {
             rotate: "-90deg",
           }}
         >
-          <div className="h-12 w-12 bg-primary rounded-lg"></div>
+          <ReactLogo />
         </motion.div>
 
-        <motion.div className="relative left-16 top-24 h-36 w-16 overflow-hidden">
+        <motion.div className="relative left-16 top-24 h-32 w-16 overflow-hidden">
           <motion.div
             id="container-5"
             className="absolute inset-0 bg-lightpurpleaccent w-12 blur-[2px] rounded-full"
@@ -333,10 +343,10 @@ export default function Skills(): JSX.Element {
             rotate: "-90deg",
           }}
         >
-          <div className="h-12 w-12 bg-primary rounded-lg"></div>
+          <TypescriptLogo />
         </motion.div>
 
-        <motion.div className="relative left-16 top-24 h-56 w-16 overflow-hidden">
+        <motion.div className="relative left-16 top-24 h-52 w-16 overflow-hidden">
           <motion.div
             id="container-6"
             className="absolute inset-0 bg-lightpurpleaccent w-12 blur-[2px] rounded-full"
@@ -365,10 +375,10 @@ export default function Skills(): JSX.Element {
             rotate: "-90deg",
           }}
         >
-          <div className="h-12 w-12 bg-primary rounded-lg"></div>
+          <NextJSLogo />
         </motion.div>
 
-        <motion.div className="relative left-16 top-24 h-40 w-16 overflow-hidden">
+        <motion.div className="relative left-16 top-24 h-[9.5rem] w-16 overflow-hidden">
           <motion.div
             id="container-7"
             className="absolute inset-0 bg-lightpurpleaccent w-12 blur-[2px] rounded-full"
@@ -397,7 +407,7 @@ export default function Skills(): JSX.Element {
             rotate: "-90deg",
           }}
         >
-          <div className="h-12 w-12 bg-primary rounded-lg"></div>
+          <MobxLogo />
         </motion.div>
 
         <motion.div className="relative left-16 top-24 h-32 w-16 overflow-hidden">
@@ -429,10 +439,10 @@ export default function Skills(): JSX.Element {
             rotate: "-90deg",
           }}
         >
-          <div className="h-12 w-12 bg-primary rounded-lg"></div>
+          <BootstrapLogo />
         </motion.div>
 
-        <motion.div className="relative left-16 top-24 h-56 w-16 overflow-hidden">
+        <motion.div className="relative left-16 top-24 h-52 w-16 overflow-hidden">
           <motion.div
             id="container-9"
             className="absolute inset-0 bg-lightpurpleaccent w-12 blur-[2px] rounded-full"
@@ -461,10 +471,10 @@ export default function Skills(): JSX.Element {
             rotate: "-90deg",
           }}
         >
-          <div className="h-12 w-12 bg-primary rounded-lg"></div>
+          <MaterialuiLogo />
         </motion.div>
 
-        <motion.div className="relative left-16 top-24 h-56 w-16 overflow-hidden">
+        <motion.div className="relative left-16 top-24 h-52 w-16 overflow-hidden">
           <motion.div
             id="container-10"
             className="absolute inset-0 bg-lightpurpleaccent w-12 blur-[2px] rounded-full"
@@ -493,10 +503,10 @@ export default function Skills(): JSX.Element {
             rotate: "-90deg",
           }}
         >
-          <div className="h-12 w-12 bg-primary rounded-lg"></div>
+          <FramerLogo />
         </motion.div>
 
-        <motion.div className="relative left-16 top-24 h-72 w-16 overflow-hidden">
+        <motion.div className="relative left-16 top-24 h-[17rem] w-16 overflow-hidden">
           <motion.div
             id="container-11"
             className="absolute inset-0 bg-lightpurpleaccent w-12 blur-[2px] rounded-full"
@@ -525,7 +535,7 @@ export default function Skills(): JSX.Element {
             rotate: "-90deg",
           }}
         >
-          <div className="h-12 w-12 bg-primary rounded-lg"></div>
+          <GithubLogo />
         </motion.div>
 
         <motion.div className="relative left-16 top-24 h-36 w-16 overflow-hidden">
