@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import MovingStars from "./Layouts/MovingStars";
 
 const App: React.FC = () => {
-  const [activeComponent, setActiveComponent] = useState<string | null>(null);
   const [isWelcoming, setIsWelcoming] = useState<boolean>(true);
 
   const handleHideWelcome = () => {

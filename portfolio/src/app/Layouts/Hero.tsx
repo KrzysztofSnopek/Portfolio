@@ -52,7 +52,7 @@ function Hero() {
                     ? "opacity-100 cursor-auto"
                     : "opacity-50 group/item"
                 )}
-                key={section.name}
+                key={index}
               >
                 <div className="relative h-full w-full overflow-hidden rounded-2xl">
                   <img
