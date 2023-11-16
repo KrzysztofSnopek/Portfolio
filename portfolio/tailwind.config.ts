@@ -10,6 +10,9 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["SF Pro", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"],
+        sora: ["Sora", "sans-serif"],
+        grotesk: ["Space Grotesk", "sans-serif"],
       },
       colors: {
         primary: "var(--color-primary)",

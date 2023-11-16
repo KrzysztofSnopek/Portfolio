@@ -1,31 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import HeroTheme from "./Components/Hero/HeroTheme";
-import About from "./Layouts/Hero";
-import Contact from "./Layouts/Contact";
-import Projects from "./Layouts/Projects";
-import PhotoBlob from "./Components/Hero/PhotoBlob";
-import Image from "next/image";
-import Home from "./Layouts/Home";
-import Resume from "./Layouts/Resume";
-import Skills from "./Layouts/Skills";
-import Project1 from "./Components/SlideProjects/Project1";
 import { WelcomePage } from "./Components/WelcomePage";
-import { motion, AnimatePresence, useTransform } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import MovingStars from "./Layouts/MovingStars";
 
 const App: React.FC = () => {
   const [activeComponent, setActiveComponent] = useState<string | null>(null);
   const [isWelcoming, setIsWelcoming] = useState<boolean>(true);
-
-  const scrollToComponent = (component: string) => {
-    setActiveComponent(component);
-    const element = document.getElementById(component);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   const handleHideWelcome = () => {
     setIsWelcoming(false);

@@ -104,10 +104,10 @@ function Hero() {
                   </div>
                   <div
                     className={classNames(
-                      "absolute h-[640px] w-[154px] flex flex-col justify-start items-center p-4 text-4xl font-bold z-30 opacity-0",
+                      "absolute h-[640px]  flex flex-col justify-start items-center p-4 text-4xl font-bold z-30 opacity-0",
                       activeItem === index
                         ? "cursor-auto w-0"
-                        : "md:group-hover/item:opacity-100 transition-[opacity]"
+                        : "md:group-hover/item:opacity-100 transition-[opacity] w-[154px]"
                     )}
                   >
                     {section.icon && (
