@@ -196,7 +196,7 @@ export default function Skills(): JSX.Element {
           ></motion.div>
           <motion.div
             id="text"
-            className="p-4 font-bold text-3xl opacity-0"
+            className="p-4 text-3xl opacity-0"
             initial={{
               y: 0,
               rotate: "-90deg",
@@ -228,7 +228,7 @@ export default function Skills(): JSX.Element {
           ></motion.div>
           <motion.div
             id="text-2"
-            className="p-4 font-bold text-3xl opacity-0"
+            className="p-4 text-3xl opacity-0"
             initial={{
               y: 0,
               rotate: "-90deg",
@@ -260,7 +260,7 @@ export default function Skills(): JSX.Element {
           ></motion.div>
           <motion.div
             id="text-3"
-            className="p-4 font-bold text-3xl opacity-0"
+            className="p-4 text-3xl opacity-0"
             initial={{
               y: 0,
               rotate: "-90deg",
@@ -292,7 +292,7 @@ export default function Skills(): JSX.Element {
           ></motion.div>
           <motion.div
             id="text-4"
-            className="p-4 font-bold text-3xl opacity-0"
+            className="p-4 text-3xl opacity-0"
             initial={{
               y: 0,
               rotate: "-90deg",
@@ -324,7 +324,7 @@ export default function Skills(): JSX.Element {
           ></motion.div>
           <motion.div
             id="text-5"
-            className="p-4 font-bold text-3xl opacity-0"
+            className="p-4 text-3xl opacity-0"
             initial={{
               y: 0,
               rotate: "-90deg",
@@ -356,7 +356,7 @@ export default function Skills(): JSX.Element {
           ></motion.div>
           <motion.div
             id="text-6"
-            className="p-4 font-bold text-3xl opacity-0"
+            className="p-4 text-3xl opacity-0"
             initial={{
               y: 0,
               rotate: "-90deg",
@@ -388,7 +388,7 @@ export default function Skills(): JSX.Element {
           ></motion.div>
           <motion.div
             id="text-7"
-            className="p-4 font-bold text-3xl opacity-0"
+            className="p-4 text-3xl opacity-0"
             initial={{
               y: 0,
               rotate: "-90deg",
@@ -420,7 +420,7 @@ export default function Skills(): JSX.Element {
           ></motion.div>
           <motion.div
             id="text-8"
-            className="p-4 font-bold text-3xl opacity-0"
+            className="p-4 text-3xl opacity-0"
             initial={{
               y: 0,
               rotate: "-90deg",
@@ -452,7 +452,7 @@ export default function Skills(): JSX.Element {
           ></motion.div>
           <motion.div
             id="text-9"
-            className="p-4 font-bold text-3xl opacity-0"
+            className="p-4 text-3xl opacity-0"
             initial={{
               y: 0,
               rotate: "-90deg",
@@ -484,7 +484,7 @@ export default function Skills(): JSX.Element {
           ></motion.div>
           <motion.div
             id="text-10"
-            className="p-4 font-bold text-3xl opacity-0"
+            className="p-4 text-3xl opacity-0"
             initial={{
               y: 0,
               rotate: "-90deg",
@@ -516,7 +516,7 @@ export default function Skills(): JSX.Element {
           ></motion.div>
           <motion.div
             id="text-11"
-            className="p-4 font-bold text-3xl opacity-0"
+            className="p-4 text-3xl opacity-0"
             initial={{
               y: 0,
               rotate: "-90deg",
@@ -548,7 +548,7 @@ export default function Skills(): JSX.Element {
           ></motion.div>
           <motion.div
             id="text-12"
-            className="p-4 font-bold text-3xl opacity-0"
+            className="p-4 text-3xl opacity-0"
             initial={{
               y: 0,
               rotate: "-90deg",
