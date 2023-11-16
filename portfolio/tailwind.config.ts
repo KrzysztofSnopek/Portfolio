@@ -28,7 +28,7 @@ const config: Config = {
         code: "url('/Images/Code.jpg')",
         smoke: "url('/Images/SmokySky.jpg')",
         texture:
-          "url(/glow-texture.png), radial-gradient(var(--color-accent), transparent 90%)",
+          "url(/Images/glow-texture.png), radial-gradient(var(--color-accent), transparent 90%)",
       },
       boxShadow: {
         flip: "0 0px 0px 100px rgba(51, 65, 85, 1)",
