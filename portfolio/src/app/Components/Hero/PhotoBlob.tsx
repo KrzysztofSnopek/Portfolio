@@ -21,7 +21,7 @@ export default function PhotoBlob() {
   }, []);
 
   return (
-    <div style={{ width: "100%", height: "100vh" }}>
+    <div style={{ width: "270px", height: "270px" }}>
       <SphereComponent canvasSize={canvasSize} />
     </div>
   );
