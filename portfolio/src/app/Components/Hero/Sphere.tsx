@@ -36,6 +36,7 @@ const SphereComponent: React.FC<SphereComponentProps> = ({ canvasSize }) => {
       >
         <MeshDistortMaterial
           color="#3b1aab"
+          opacity={0.5}
           attach="material"
           distort={0.3}
           speed={2}
