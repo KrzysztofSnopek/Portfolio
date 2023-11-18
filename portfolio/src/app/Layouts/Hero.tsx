@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Hero() {
-  const [activeItem, setActiveItem] = useState(5);
+  const [activeItem, setActiveItem] = useState(1);
   const wrapperRef = useRef<HTMLUListElement | null>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 

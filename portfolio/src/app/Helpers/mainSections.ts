@@ -10,6 +10,7 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import ContactComponent from "../Layouts/Contact";
 import Resume from "../Layouts/Resume";
 import Skills from "../Layouts/Skills";
+import Home from "../Layouts/Home";
 
 type Section = {
   img: string;
@@ -30,6 +31,7 @@ export const mainSections: Section[] = [
     title: "A few words about me and my goals",
     name: "Introduction",
     icon: faHandshake,
+    content: Home,
   },
   {
     img: "/Images/experience.jpg",
