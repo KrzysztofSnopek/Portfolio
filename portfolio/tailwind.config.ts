@@ -25,8 +25,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        code: "url('/Images/Code.jpg')",
-        smoke: "url('/Images/SmokySky.jpg')",
+        photo: "url('/Images/Hero.jpg')",
         texture:
           "url(/Images/glow-texture.png), radial-gradient(var(--color-accent), transparent 90%)",
       },
