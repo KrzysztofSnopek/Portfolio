@@ -23,8 +23,8 @@ export default function Home(): JSX.Element {
       </div>
       <p>knowledge hungry</p>
       <p>in love with web animations</p>
-      <div className="relative">
-        <div className="relative h-48 w-48 overflow-hidden rounded-full">
+      <div className="relative h-48 w-48">
+        <div className="relative h-48 w-48 overflow-hidden rounded-full z-10">
           <img
             className="absolute right-0 top-1/2 max-w-none -translate-y-1/2 object-contain grayscale left-1/2 h-[640px] w-[1000px] -translate-x-1/2 scale-75"
             src="/Images/Hero.jpg"
@@ -33,7 +33,7 @@ export default function Home(): JSX.Element {
             height="640px"
           />
         </div>
-        <div className="absolute right-0 top-1/2 max-w-none -translate-y-1/2 left-1/2 -translate-x-1/2">
+        <div className="absolute left-1/2 top-1/2 max-w-none -translate-y-1/2 -translate-x-1/2">
           <PhotoBlob />
         </div>
       </div>
