@@ -8,22 +8,23 @@ export default function Home(): JSX.Element {
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    // console.log("Page scroll: ", latest);
-    // console.log(window.innerHeight);
     if (latest === 3 * window.innerHeight) {
       setIsBottomPage(true);
     }
   });
 
-  useEffect(() => {
-    console.log(isBottomPage);
-  }, [isBottomPage]);
-
   return (
     <div className="flex flex-col px-2">
-      <motion.p initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
-        Krzysztof Snopek
-      </motion.p>
+      {isBottomPage && (
+        <motion.p
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0, transition: { duration: 2 } }}
+          className="text-2xl"
+        >
+          Krzysztof Snopek
+        </motion.p>
+      )}
+
       <p>
         Since I started my journey into web development, I have learned quite a
         few different technologies as I have been getting better. Starting with
