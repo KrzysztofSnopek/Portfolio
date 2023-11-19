@@ -1,28 +1,52 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PhotoBlob from "../Components/Hero/PhotoBlob";
+import { motion, useMotionValueEvent } from "framer-motion";
+import { useScroll } from "framer-motion";
 
 export default function Home(): JSX.Element {
+  const [isBottomPage, setIsBottomPage] = useState<boolean>(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    // console.log("Page scroll: ", latest);
+    // console.log(window.innerHeight);
+    if (latest === 3 * window.innerHeight) {
+      setIsBottomPage(true);
+    }
+  });
+
+  useEffect(() => {
+    console.log(isBottomPage);
+  }, [isBottomPage]);
+
   return (
     <div className="flex flex-col px-2">
-      <p>Krzysztof Snopek</p>
+      <motion.p initial={{ opacity: 0, y: 100 }} animate={{ opacity: 1, y: 0 }}>
+        Krzysztof Snopek
+      </motion.p>
       <p>
         Since I started my journey into web development, I have learned quite a
         few different technologies as I have been getting better. Starting with
         basics like HTML and CSS, I got to know JavaScript, ReactJS framework,
         and typescript later on.
       </p>
+
       <p>
         Looking for a work as junior frontend developer, I'm eager to contribute
         and apply my web development and design skills in a professional
         setting. I'm ready to make an impact and actively contribute to
         projects!
       </p>
+
       <div>
         <p>1+</p>
         <p>year of non-commercial experience</p>
       </div>
+
       <p>knowledge hungry</p>
+
       <p>in love with web animations</p>
+
       <div className="relative h-48 w-48">
         <div className="relative h-48 w-48 overflow-hidden rounded-full z-10">
           <img
