@@ -18,7 +18,11 @@ export default function Home(): JSX.Element {
   const handleStartAnimation = () => {
     /* photo */
     const photoAnimation = async () => {
-      await animate("#photo", { opacity: 0.5, scale: 0.5 }, { duration: 1 });
+      await animate(
+        "#photo",
+        { opacity: 0.5, scale: 0.5 },
+        { duration: 1, delay: 2 }
+      );
       await animate("#photo", { x: 250 }, { duration: 1 });
       await animate("#photo", { y: 200 }, { duration: 1 });
       await animate("#photo", { x: -200 }, { duration: 1 });
@@ -34,7 +38,7 @@ export default function Home(): JSX.Element {
       await animate(
         "#par-1",
         { opacity: 0.8, scale: 0.5 },
-        { duration: 1, delay: 1 }
+        { duration: 1, delay: 3 }
       );
       await animate("#par-1", { x: 432 }, { duration: 1 });
       await animate("#par-1", { y: 200 }, { duration: 1 });
@@ -51,7 +55,7 @@ export default function Home(): JSX.Element {
       await animate(
         "#par-2",
         { opacity: 0.8, scale: 0.5 },
-        { duration: 1, delay: 1 }
+        { duration: 1, delay: 3 }
       );
       await animate("#par-2", { y: 200 }, { duration: 1 });
       await animate("#par-2", { y: 400 }, { duration: 1 });
@@ -68,7 +72,7 @@ export default function Home(): JSX.Element {
       await animate(
         "#phrases",
         { x: -120, y: -165, opacity: 0.8 },
-        { duration: 1, delay: 1 }
+        { duration: 1, delay: 3 }
       );
       await animate("#phrases", { y: -330 }, { duration: 1 });
       await animate("#phrases", { x: 330 }, { duration: 1 });

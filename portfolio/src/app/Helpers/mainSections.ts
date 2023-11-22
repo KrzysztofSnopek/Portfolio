@@ -11,6 +11,7 @@ import ContactComponent from "../Layouts/Contact";
 import Resume from "../Layouts/Resume";
 import Skills from "../Layouts/Skills";
 import Home from "../Layouts/Home";
+import Experience from "../Layouts/Experience";
 
 type Section = {
   img: string;
@@ -38,6 +39,7 @@ export const mainSections: Section[] = [
     title: "Work experience and education",
     name: "Experience",
     icon: faBook,
+    content: Experience,
   },
   {
     img: "/Images/projects.jpg",
