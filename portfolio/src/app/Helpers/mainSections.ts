@@ -12,6 +12,7 @@ import Resume from "../Layouts/Resume";
 import Skills from "../Layouts/Skills";
 import Home from "../Layouts/Home";
 import Experience from "../Layouts/Experience";
+import Projects from "../Layouts/Projects";
 
 type Section = {
   img: string;
@@ -46,6 +47,7 @@ export const mainSections: Section[] = [
     title: "List of recent projects",
     name: "Projects",
     icon: faList,
+    content: Projects,
   },
   {
     img: "/Images/skills.jpg",
