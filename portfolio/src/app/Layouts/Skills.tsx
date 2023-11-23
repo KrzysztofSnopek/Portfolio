@@ -20,149 +20,185 @@ export default function Skills(): JSX.Element {
   const [scope, animate] = useAnimate();
 
   const handleAnimation = async () => {
-    await animate(
-      "#box",
-      { opacity: 1, x: 64, rotate: "0deg" },
-      { duration: 0.6 }
-    );
-    await animate("#container", { opacity: 0.7, x: 8 });
-    await animate(
-      "#text",
-      { opacity: 1, y: 49 },
-      { duration: 0.4, delay: 0.1 }
-    );
+    const box = async () => {
+      await animate(
+        "#box",
+        { opacity: 1, x: 64, rotate: "0deg" },
+        { duration: 0.6 }
+      );
+      await animate("#container", { opacity: 0.7, x: 8 });
+      await animate(
+        "#text",
+        { opacity: 1, y: 49 },
+        { duration: 0.4, delay: 0.1 }
+      );
+    };
+    box();
 
-    await animate(
-      "#box-2",
-      { opacity: 1, x: 64, rotate: "0deg" },
-      { duration: 0.6 }
-    );
-    await animate("#container-2", { opacity: 0.7, x: 8 });
-    await animate(
-      "#text-2",
-      { opacity: 1, y: 141 },
-      { duration: 0.8, delay: 0.2 }
-    );
+    const box2 = async () => {
+      await animate(
+        "#box-2",
+        { opacity: 1, x: 64, rotate: "0deg" },
+        { duration: 0.6, delay: 0.5 }
+      );
+      await animate("#container-2", { opacity: 0.7, x: 8 });
+      await animate(
+        "#text-2",
+        { opacity: 1, y: 141 },
+        { duration: 0.8, delay: 0.2 }
+      );
+    };
+    box2();
 
-    await animate(
-      "#box-3",
-      { opacity: 1, x: 64, rotate: "0deg" },
-      { duration: 0.6 }
-    );
-    await animate("#container-3", { opacity: 0.7, x: 8 });
-    await animate(
-      "#text-3",
-      { opacity: 1, y: 24 },
-      { duration: 0.3, delay: 0.1 }
-    );
+    const box3 = async () => {
+      await animate(
+        "#box-3",
+        { opacity: 1, x: 64, rotate: "0deg" },
+        { duration: 0.6, delay: 1 }
+      );
+      await animate("#container-3", { opacity: 0.7, x: 8 });
+      await animate(
+        "#text-3",
+        { opacity: 1, y: 24 },
+        { duration: 0.3, delay: 0.1 }
+      );
+    };
+    box3();
 
-    await animate(
-      "#box-4",
-      { opacity: 1, x: 64, rotate: "0deg" },
-      { duration: 0.6 }
-    );
-    await animate("#container-4", { opacity: 0.7, x: 8 });
-    await animate(
-      "#text-4",
-      { opacity: 1, y: 102 },
-      { duration: 0.6, delay: 0.1 }
-    );
+    const box4 = async () => {
+      await animate(
+        "#box-4",
+        { opacity: 1, x: 64, rotate: "0deg" },
+        { duration: 0.6, delay: 1.5 }
+      );
+      await animate("#container-4", { opacity: 0.7, x: 8 });
+      await animate(
+        "#text-4",
+        { opacity: 1, y: 102 },
+        { duration: 0.6, delay: 0.1 }
+      );
+    };
+    box4();
 
-    await animate(
-      "#box-5",
-      { opacity: 1, x: 64, rotate: "0deg" },
-      { duration: 0.6 }
-    );
-    await animate("#container-5", { opacity: 0.7, x: 8 });
-    await animate(
-      "#text-5",
-      { opacity: 1, y: 61 },
-      { duration: 0.5, delay: 0.1 }
-    );
+    const box5 = async () => {
+      await animate(
+        "#box-5",
+        { opacity: 1, x: 64, rotate: "0deg" },
+        { duration: 0.6, delay: 2 }
+      );
+      await animate("#container-5", { opacity: 0.7, x: 8 });
+      await animate(
+        "#text-5",
+        { opacity: 1, y: 61 },
+        { duration: 0.5, delay: 0.1 }
+      );
+    };
+    box5();
 
-    await animate(
-      "#box-6",
-      { opacity: 1, x: 64, rotate: "0deg" },
-      { duration: 0.6 }
-    );
-    await animate("#container-6", { opacity: 0.7, x: 8 });
-    await animate(
-      "#text-6",
-      { opacity: 1, y: 141 },
-      { duration: 0.7, delay: 0.1 }
-    );
+    const box6 = async () => {
+      await animate(
+        "#box-6",
+        { opacity: 1, x: 64, rotate: "0deg" },
+        { duration: 0.6, delay: 2.5 }
+      );
+      await animate("#container-6", { opacity: 0.7, x: 8 });
+      await animate(
+        "#text-6",
+        { opacity: 1, y: 141 },
+        { duration: 0.7, delay: 0.1 }
+      );
+    };
+    box6();
 
-    await animate(
-      "#box-7",
-      { opacity: 1, x: 64, rotate: "0deg" },
-      { duration: 0.6 }
-    );
-    await animate("#container-7", { opacity: 0.7, x: 8 });
-    await animate(
-      "#text-7",
-      { opacity: 1, y: 85 },
-      { duration: 0.6, delay: 0.1 }
-    );
+    const box7 = async () => {
+      await animate(
+        "#box-7",
+        { opacity: 1, x: 64, rotate: "0deg" },
+        { duration: 0.6, delay: 3 }
+      );
+      await animate("#container-7", { opacity: 0.7, x: 8 });
+      await animate(
+        "#text-7",
+        { opacity: 1, y: 85 },
+        { duration: 0.6, delay: 0.1 }
+      );
+    };
+    box7();
 
-    await animate(
-      "#box-8",
-      { opacity: 1, x: 64, rotate: "0deg" },
-      { duration: 0.6 }
-    );
-    await animate("#container-8", { opacity: 0.7, x: 8 });
-    await animate(
-      "#text-8",
-      { opacity: 1, y: 54 },
-      { duration: 0.5, delay: 0.1 }
-    );
+    const box8 = async () => {
+      await animate(
+        "#box-8",
+        { opacity: 1, x: 64, rotate: "0deg" },
+        { duration: 0.6, delay: 3.5 }
+      );
+      await animate("#container-8", { opacity: 0.7, x: 8 });
+      await animate(
+        "#text-8",
+        { opacity: 1, y: 54 },
+        { duration: 0.5, delay: 0.1 }
+      );
+    };
+    box8();
 
-    await animate(
-      "#box-9",
-      { opacity: 1, x: 64, rotate: "0deg" },
-      { duration: 0.6 }
-    );
-    await animate("#container-9", { opacity: 0.7, x: 8 });
-    await animate(
-      "#text-9",
-      { opacity: 1, y: 137 },
-      { duration: 0.7, delay: 0.1 }
-    );
+    const box9 = async () => {
+      await animate(
+        "#box-9",
+        { opacity: 1, x: 64, rotate: "0deg" },
+        { duration: 0.6, delay: 4 }
+      );
+      await animate("#container-9", { opacity: 0.7, x: 8 });
+      await animate(
+        "#text-9",
+        { opacity: 1, y: 137 },
+        { duration: 0.7, delay: 0.1 }
+      );
+    };
+    box9();
 
-    await animate(
-      "#box-10",
-      { opacity: 1, x: 64, rotate: "0deg" },
-      { duration: 0.6 }
-    );
-    await animate("#container-10", { opacity: 0.7, x: 8 });
-    await animate(
-      "#text-10",
-      { opacity: 1, y: 145 },
-      { duration: 0.7, delay: 0.1 }
-    );
+    const box10 = async () => {
+      await animate(
+        "#box-10",
+        { opacity: 1, x: 64, rotate: "0deg" },
+        { duration: 0.6, delay: 4.5 }
+      );
+      await animate("#container-10", { opacity: 0.7, x: 8 });
+      await animate(
+        "#text-10",
+        { opacity: 1, y: 145 },
+        { duration: 0.7, delay: 0.1 }
+      );
+    };
+    box10();
 
-    await animate(
-      "#box-11",
-      { opacity: 1, x: 64, rotate: "0deg" },
-      { duration: 0.6 }
-    );
-    await animate("#container-11", { opacity: 0.7, x: 8 });
-    await animate(
-      "#text-11",
-      { opacity: 1, y: 204 },
-      { duration: 0.8, delay: 0.1 }
-    );
+    const box11 = async () => {
+      await animate(
+        "#box-11",
+        { opacity: 1, x: 64, rotate: "0deg" },
+        { duration: 0.6, delay: 5 }
+      );
+      await animate("#container-11", { opacity: 0.7, x: 8 });
+      await animate(
+        "#text-11",
+        { opacity: 1, y: 204 },
+        { duration: 0.8, delay: 0.1 }
+      );
+    };
+    box11();
 
-    await animate(
-      "#box-12",
-      { opacity: 1, x: 64, rotate: "0deg" },
-      { duration: 0.6 }
-    );
-    await animate("#container-12", { opacity: 0.7, x: 8 });
-    await animate(
-      "#text-12",
-      { opacity: 1, y: 73 },
-      { duration: 0.5, delay: 0.1 }
-    );
+    const box12 = async () => {
+      await animate(
+        "#box-12",
+        { opacity: 1, x: 64, rotate: "0deg" },
+        { duration: 0.6, delay: 5.5 }
+      );
+      await animate("#container-12", { opacity: 0.7, x: 8 });
+      await animate(
+        "#text-12",
+        { opacity: 1, y: 73 },
+        { duration: 0.5, delay: 0.1 }
+      );
+    };
+    box12();
   };
 
   return (
