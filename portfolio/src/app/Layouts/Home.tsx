@@ -24,12 +24,12 @@ export default function Home(): JSX.Element {
         { opacity: 0.5, scale: 0.5 },
         { duration: 1, delay: 2 }
       );
-      await animate("#photo", { x: 250 }, { duration: 1 });
-      await animate("#photo", { y: 200 }, { duration: 1 });
-      await animate("#photo", { x: -200 }, { duration: 1 });
-      await animate("#photo", { y: 0 }, { duration: 1 });
-      await animate("#photo", { x: 200 }, { duration: 1 });
-      await animate("#photo", { x: 0 }, { duration: 1, delay: 1 });
+      await animate("#photo", { x: 250 }, { duration: 0.6 });
+      await animate("#photo", { y: 200 }, { duration: 0.6 });
+      await animate("#photo", { x: -200 }, { duration: 0.6 });
+      await animate("#photo", { y: 0 }, { duration: 0.6 });
+      await animate("#photo", { x: 200 }, { duration: 0.6, delay: 0.6 });
+      await animate("#photo", { x: 0 }, { duration: 0.6, delay: 1 });
       await animate("#photo", { opacity: 1, x: 0, scale: 1 }, { duration: 1 });
     };
     photoAnimation();
@@ -41,12 +41,12 @@ export default function Home(): JSX.Element {
         { opacity: 0.8, scale: 0.5 },
         { duration: 1, delay: 3 }
       );
-      await animate("#par-1", { x: 432 }, { duration: 1 });
-      await animate("#par-1", { y: 200 }, { duration: 1 });
-      await animate("#par-1", { y: 400 }, { duration: 1 });
-      await animate("#par-1", { x: 0 }, { duration: 1 });
-      await animate("#par-1", { y: 200 }, { duration: 1 });
-      await animate("#par-1", { y: 0 }, { duration: 1 });
+      await animate("#par-1", { x: 432 }, { duration: 0.6 });
+      await animate("#par-1", { y: 200 }, { duration: 0.6 });
+      await animate("#par-1", { y: 400 }, { duration: 0.6 });
+      await animate("#par-1", { x: 0 }, { duration: 0.6 });
+      await animate("#par-1", { y: 200 }, { duration: 0.6 });
+      await animate("#par-1", { y: 0 }, { duration: 0.6 });
       await animate("#par-1", { scale: 1, opacity: 1 }, { duration: 0.5 });
     };
     paragraphOneAnimation();
@@ -58,12 +58,12 @@ export default function Home(): JSX.Element {
         { opacity: 0.8, scale: 0.5 },
         { duration: 1, delay: 3 }
       );
-      await animate("#par-2", { y: 200 }, { duration: 1 });
-      await animate("#par-2", { y: 400 }, { duration: 1 });
-      await animate("#par-2", { x: -432 }, { duration: 1 });
-      await animate("#par-2", { y: 200 }, { duration: 1 });
-      await animate("#par-2", { y: 0 }, { duration: 1 });
-      await animate("#par-2", { x: 0 }, { duration: 1 });
+      await animate("#par-2", { y: 200 }, { duration: 0.6 });
+      await animate("#par-2", { y: 400 }, { duration: 0.6 });
+      await animate("#par-2", { x: -432 }, { duration: 0.6 });
+      await animate("#par-2", { y: 200 }, { duration: 0.6 });
+      await animate("#par-2", { y: 0 }, { duration: 0.6 });
+      await animate("#par-2", { x: 0 }, { duration: 0.6 });
       await animate("#par-2", { scale: 1, opacity: 1 }, { duration: 0.5 });
     };
     paragraphTwoAnimation();
@@ -75,17 +75,17 @@ export default function Home(): JSX.Element {
         { x: -120, y: -165, opacity: 0.8 },
         { duration: 1, delay: 3 }
       );
-      await animate("#phrases", { y: -330 }, { duration: 1 });
-      await animate("#phrases", { x: 330 }, { duration: 1 });
-      await animate("#phrases", { y: -165 }, { duration: 1 });
-      await animate("#phrases", { y: -0 }, { duration: 1 });
-      await animate("#phrases", { x: 0 }, { duration: 1 });
-      await animate("#phrases", { scale: 1, opacity: 1 }, { duration: 1 });
+      await animate("#phrases", { y: -330 }, { duration: 0.6 });
+      await animate("#phrases", { x: 330 }, { duration: 0.6 });
+      await animate("#phrases", { y: -165 }, { duration: 0.6 });
+      await animate("#phrases", { y: -0 }, { duration: 0.6 });
+      await animate("#phrases", { x: 0 }, { duration: 0.6 });
+      await animate("#phrases", { scale: 1, opacity: 1 }, { duration: 0.6 });
 
       const spreadAnimation = () => {
-        animate("#phrase-3", { x: 0, y: 0 }, { duration: 1 });
-        animate("#phrase-2", { x: 0, y: 0 }, { duration: 1 });
-        animate("#phrase-1", { x: 0, y: 0 }, { duration: 1 });
+        animate("#phrase-3", { x: 0, y: 0 }, { duration: 0.6 });
+        animate("#phrase-2", { x: 0, y: 0 }, { duration: 0.6 });
+        animate("#phrase-1", { x: 0, y: 0 }, { duration: 0.6 });
       };
       spreadAnimation();
 
@@ -93,17 +93,17 @@ export default function Home(): JSX.Element {
         animate(
           "#oneplus",
           { color: "#130c2b", textShadow: "2px 2px 3px #6247bf" },
-          { duration: 1, delay: 1 }
+          { duration: 1, delay: 2 }
         );
         animate(
           "#growing",
           { color: "#130c2b", textShadow: "2px 2px 3px #6247bf" },
-          { duration: 1, delay: 1 }
+          { duration: 1, delay: 2 }
         );
         animate(
           "#love",
           { color: "#130c2b", textShadow: "2px 2px 3px #6247bf" },
-          { duration: 1, delay: 1 }
+          { duration: 1, delay: 2 }
         );
       };
       colorAnimation();
