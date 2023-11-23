@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useAnimate } from "framer-motion";
 import LinkButton from "./LinkButton";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,14 +8,27 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { projectData } from "../Helpers/projectsData";
 
 export default function Projects(): JSX.Element {
+  const [scope, animate] = useAnimate();
+  const handleAnimation = () => {
+    animate("#proj-1", { y: 0, opacity: 1 }, { duration: 2 });
+    animate("#proj-2", { y: 0, opacity: 1 }, { duration: 2, delay: 0.5 });
+    animate("#proj-3", { y: 0, opacity: 1 }, { duration: 2, delay: 1 });
+  };
+
   return (
-    <div className="relative w-full h-[500px] overflow-hidden flex flex-col mr-1">
-      <div className="overflow-y-auto scrollbar-track-transparent scrollbar">
+    <div
+      className="relative w-full h-[500px] overflow-hidden flex flex-col mr-1"
+      onMouseEnter={handleAnimation}
+    >
+      <div
+        className="overflow-y-auto scrollbar-track-transparent scrollbar"
+        ref={scope}
+      >
         {projectData.map((project) => (
           <motion.div
             className="w-[98%] relative inline-block p-2 my-[0.75rem] group"
-            id="exp-1"
-            initial={{ opacity: 1, y: 0 }}
+            id={project.id}
+            initial={{ opacity: 0, y: -200 }}
             key={project.key}
           >
             <div className="absolute inset-0 bg-gradient-to-b from-indigo-100 via-grayaccent to-accent group-hover:from-slate-100 group-hover:via-lightpurpleaccent group-hover:to-purpleaccent opacity-70 group-hover:outline group-hover:outline-2 group-hover:outline-secondary rounded-lg transition-colors duration-700"></div>

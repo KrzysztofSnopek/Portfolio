@@ -27,6 +27,7 @@ interface ProjectData {
   description: string;
   technologyStack: string[];
   key: string;
+  id: string;
 }
 
 export const projectData: ProjectData[] = [
@@ -39,6 +40,7 @@ export const projectData: ProjectData[] = [
       "Gallery allowing uploading and browsing through photos stored in a database. You can create a profile and engage with content through a photo liking system. First testing on components and functions. System of minimalistic state management with MobX library.",
     technologyStack: galleryTechnologyStack,
     key: "gallery",
+    id: "proj-1",
   },
   {
     imgSrc: "/Images/stock3.PNG",
@@ -48,6 +50,7 @@ export const projectData: ProjectData[] = [
       "An app allowing the user to check, buy and sell stock shares, which prices are updated in real time with api calls. Authorization created with Firebase.",
     technologyStack: stockTechnologyStack,
     key: "stock",
+    id: "proj-2",
   },
   {
     imgSrc: "/Images/oldportfolio.PNG",
@@ -58,5 +61,6 @@ export const projectData: ProjectData[] = [
       "Fully responsive one-page website with portfolio and general information about myself.",
     technologyStack: portfolioTechnologyStack,
     key: "oldportfolio",
+    id: "proj-3",
   },
 ];
