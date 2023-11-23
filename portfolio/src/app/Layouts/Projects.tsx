@@ -9,10 +9,15 @@ import { projectData } from "../Helpers/projectsData";
 
 export default function Projects(): JSX.Element {
   const [scope, animate] = useAnimate();
+  let animationStarted = false;
+
   const handleAnimation = () => {
-    animate("#proj-1", { y: 0, opacity: 1 }, { duration: 2 });
-    animate("#proj-2", { y: 0, opacity: 1 }, { duration: 2, delay: 0.5 });
-    animate("#proj-3", { y: 0, opacity: 1 }, { duration: 2, delay: 1 });
+    if (!animationStarted) {
+      animationStarted = true;
+      animate("#proj-1", { y: 0, opacity: 1 }, { duration: 2 });
+      animate("#proj-2", { y: 0, opacity: 1 }, { duration: 2, delay: 0.5 });
+      animate("#proj-3", { y: 0, opacity: 1 }, { duration: 2, delay: 1 });
+    }
   };
 
   return (
