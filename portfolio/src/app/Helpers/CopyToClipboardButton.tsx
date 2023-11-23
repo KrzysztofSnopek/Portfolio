@@ -25,7 +25,7 @@ export default function CopyToClipboardButton({
     return () => {
       clipboard1.destroy();
     };
-  }, []);
+  }, [index]);
 
   return (
     <div

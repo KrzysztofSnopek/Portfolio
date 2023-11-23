@@ -163,8 +163,7 @@ export default function Home(): JSX.Element {
                   alt="my photo"
                   width={640}
                   height={640}
-                  objectFit="contain"
-                  className="absolute right-0 top-1/2 max-w-none -translate-y-1/2 left-1/2 -translate-x-1/2 scale-50"
+                  className="absolute right-0 top-1/2 max-w-none -translate-y-1/2 left-1/2 -translate-x-1/2 scale-50 bg-contain grayscale hover:grayscale-0 transition-colors duration-500"
                 />
               </div>
               <div className="absolute left-1/2 top-1/2 max-w-none -translate-y-1/2 -translate-x-1/2">

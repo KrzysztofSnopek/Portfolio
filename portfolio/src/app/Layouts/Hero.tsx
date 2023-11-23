@@ -2,6 +2,7 @@ import classNames from "classnames";
 import { mainSections } from "../Helpers/mainSections";
 import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 
 function Hero() {
   const [activeItem, setActiveItem] = useState(1);
@@ -55,12 +56,12 @@ function Hero() {
                 key={index}
               >
                 <div className="relative h-full w-full overflow-hidden rounded-2xl">
-                  <img
+                  <Image
                     className="absolute right-0 top-1/2 h-auto w-24 max-w-none -translate-y-1/2 object-cover grayscale md:left-1/2 md:h-[640px] md:w-[1000px] md:-translate-x-1/2"
                     src={section.img}
                     alt={section.name}
-                    width="590px"
-                    height="640px"
+                    width={590}
+                    height={640}
                   />
                   <div
                     className={classNames(
