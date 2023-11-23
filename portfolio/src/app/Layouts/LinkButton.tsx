@@ -6,10 +6,12 @@ const SHUFFLE_TIME = 50;
 
 const CHARS = "!@#$%^&*():{};|,.<>/?";
 
-export default function ResumeDownloadButton({
+export default function LinkButton({
   buttonText,
+  link,
 }: {
   buttonText: string;
+  link: string;
 }) {
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -50,7 +52,6 @@ export default function ResumeDownloadButton({
 
   return (
     <motion.button
-      type="submit"
       whileHover={{
         scaleY: 1.05,
       }}
@@ -59,12 +60,10 @@ export default function ResumeDownloadButton({
       }}
       onMouseEnter={scramble}
       onMouseLeave={stopScramble}
-      className="group relative overflow-hidden rounded-lg border-[2px] border-primary bg-purpleaccent px-4 py-2 mt-6 font-mono font-medium text-2xl uppercase text-lightpurpleaccent transition-colors hover:text-indigo-200 flex justify-center opacity-90 hover:opacity-100"
+      className="group relative overflow-hidden rounded-lg border-[1px] border-primary bg-accent px-2 h-6 mt-2 font-mono font-medium text-sm uppercase text-indigo-300 transition-colors hover:text-indigo-200 flex justify-center opacity-90 hover:opacity-100 group-hover:bg-purpleaccent"
     >
       <div className="relative z-10 flex items-center gap-2">
-        <a href="Images/CV.pdf" download="Krzysztof_Snopek_CV.pdf">
-          {text}
-        </a>
+        <a href={link}>{text}</a>
       </div>
       <motion.span
         initial={{

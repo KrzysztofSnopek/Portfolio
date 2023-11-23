@@ -15,7 +15,7 @@ export default function FlipCard() {
         <div className="grid grid-cols-8 grid-rows-10 relative">
           {tiles}
           <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-[70%] z-10">
-            <ResumeDownloadButton />
+            <ResumeDownloadButton buttonText="download" />
           </div>
         </div>
       </div>

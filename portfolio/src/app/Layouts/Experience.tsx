@@ -10,7 +10,7 @@ export default function Experience() {
   };
 
   return (
-    <div onMouseMove={handleAnimation} ref={scope}>
+    <div onMouseEnter={handleAnimation} ref={scope}>
       <motion.div
         className="w-full relative inline-block py-2 my-4 group"
         id="exp-1"

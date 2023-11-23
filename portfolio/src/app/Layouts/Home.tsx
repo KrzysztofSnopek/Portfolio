@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import PhotoBlob from "../Components/Hero/PhotoBlob";
 import { delay, motion, useAnimate, useMotionValueEvent } from "framer-motion";
 import { useScroll } from "framer-motion";
+import Image from "next/image";
 
 export default function Home(): JSX.Element {
   const [isBottomPage, setIsBottomPage] = useState<boolean>(false);
@@ -157,12 +158,13 @@ export default function Home(): JSX.Element {
             </motion.p>
             <motion.div className="relative h-48 w-48">
               <div className="relative h-48 w-48 overflow-hidden rounded-full z-10">
-                <img
-                  className="absolute right-0 top-1/2 max-w-none -translate-y-1/2 object-contain grayscale left-1/2 h-[640px] w-[1000px] -translate-x-1/2 scale-75"
+                <Image
                   src="/Images/Hero.jpg"
                   alt="my photo"
-                  width="590px"
-                  height="640px"
+                  width={640}
+                  height={640}
+                  objectFit="contain"
+                  className="absolute right-0 top-1/2 max-w-none -translate-y-1/2 left-1/2 -translate-x-1/2 scale-50"
                 />
               </div>
               <div className="absolute left-1/2 top-1/2 max-w-none -translate-y-1/2 -translate-x-1/2">
