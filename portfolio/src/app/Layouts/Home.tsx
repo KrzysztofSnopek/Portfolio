@@ -141,9 +141,9 @@ export default function Home(): JSX.Element {
             >
               <div className="absolute inset-0 bg-accent opacity-70 blur"></div>
               <p className="py-2 mx-2 font-semibold text-sm text-justify uppercase relative z-10">
-                Looking for a work as junior frontend developer, I'm eager to
+                Looking for a work as junior frontend developer, I am eager to
                 contribute and apply my web development and design skills in a
-                professional setting. I'm ready to make an impact and actively
+                professional setting. I am ready to make an impact and actively
                 contribute to projects!
               </p>
             </motion.div>
