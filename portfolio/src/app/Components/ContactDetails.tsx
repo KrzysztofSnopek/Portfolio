@@ -1,5 +1,5 @@
 import React from "react";
-import CopyToClipboardButton from "../Helpers/CopyToClipboardButton";
+import CopyToClipboardButton from "./CopyToClipboardButton";
 import {
   faDiscord,
   faGithub,

@@ -1,8 +1,8 @@
 import { useTransform, useScroll, motion } from "framer-motion";
 import { useRef } from "react";
-import Planet from "../Helpers/Planet";
-import Hero from "./Hero";
-import { staggerItem } from "../Components/WelcomePage";
+import Planet from "./Planet";
+import Hero from "../Layouts/Hero";
+import { staggerItem } from "../Layouts/WelcomePage";
 import ScrollArrow from "./ScrollArrow";
 
 export const staggerContainer = {

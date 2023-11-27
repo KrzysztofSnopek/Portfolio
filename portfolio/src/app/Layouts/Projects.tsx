@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion, useAnimate } from "framer-motion";
-import LinkButton from "./LinkButton";
+import LinkButton from "../Components/LinkButton";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";

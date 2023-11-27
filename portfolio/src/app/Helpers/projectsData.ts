@@ -47,7 +47,7 @@ export const projectData: ProjectData[] = [
     name: "Stock App",
     gitLink: "https://github.com/KrzysztofSnopek/Stock-app",
     description:
-      "An app allowing the user to check, buy and sell stock shares, which prices are updated in real time with api calls. Authorization created with Firebase.",
+      "An app allowing the user to check, buy and sell stock shares, whose prices are updated in real time with api calls. Authorization created with Firebase.",
     technologyStack: stockTechnologyStack,
     key: "stock",
     id: "proj-2",

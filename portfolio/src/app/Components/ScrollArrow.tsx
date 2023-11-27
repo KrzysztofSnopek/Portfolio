@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
-import { staggerItem } from "../Components/WelcomePage";
+import { staggerItem } from "../Layouts/WelcomePage";
 import ExpandCircleDownTwoToneIcon from "@mui/icons-material/ExpandCircleDownTwoTone";
 
 function ScrollUnmountComponent() {

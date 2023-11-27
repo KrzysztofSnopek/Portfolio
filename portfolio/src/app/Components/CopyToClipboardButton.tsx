@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import ClipboardJS from "clipboard";
-import CopyToClipboardIcon from "../Helpers/CopyToClipboardIcon";
+import CopyToClipboardIcon from "./CopyToClipboardIcon";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";

@@ -1,5 +1,5 @@
 import React from "react";
-import FlipCard from "./FlipCard";
+import FlipCard from "../Components/FlipCard";
 
 export default function Resume(): JSX.Element {
   return (

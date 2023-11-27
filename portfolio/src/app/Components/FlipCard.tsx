@@ -1,6 +1,6 @@
 import React from "react";
 import ResumeDownloadButton from "./ResumeDownloadButton";
-import CircleWithShadow from "../Components/Tile";
+import CircleWithShadow from "../Helpers/Tile";
 
 export default function FlipCard() {
   const numTiles = 80;

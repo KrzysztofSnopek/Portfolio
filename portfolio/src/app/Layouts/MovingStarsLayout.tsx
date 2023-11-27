@@ -1,5 +1,5 @@
 import React from "react";
-import MovingStarship from "./MovingStars";
+import MovingStarship from "../Components/MovingStars";
 
 const MovingStarsLayout = () => {
   return (

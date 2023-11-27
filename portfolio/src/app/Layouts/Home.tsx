@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import PhotoBlob from "../Components/Hero/PhotoBlob";
+import PhotoBlob from "../Components/PhotoBlob";
 import { delay, motion, useAnimate, useMotionValueEvent } from "framer-motion";
 import { useScroll } from "framer-motion";
 import Image from "next/image";
@@ -141,10 +141,10 @@ export default function Home(): JSX.Element {
             >
               <div className="absolute inset-0 bg-accent opacity-70 blur"></div>
               <p className="py-2 mx-2 font-semibold text-sm text-justify uppercase relative z-10">
-                Looking for a work as junior frontend developer, I am eager to
-                contribute and apply my web development and design skills in a
-                professional setting. I am ready to make an impact and actively
-                contribute to projects!
+                Looking for a position as a junior frontend developer, I am
+                eager to contribute and apply my web development and design
+                skills in a professional setting. I am ready to make an impact
+                and actively contribute to projects!
               </p>
             </motion.div>
           </div>

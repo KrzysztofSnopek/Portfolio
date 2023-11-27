@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import AnimatedLetters from "./Hero/AnimatedLetters";
+import AnimatedLetters from "../Components/AnimatedLetters";
 import generateDelays from "../Helpers/generateDelays";
 
 export const staggerContainer = {

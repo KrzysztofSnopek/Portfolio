@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { WelcomePage } from "./Components/WelcomePage";
+import { WelcomePage } from "./Layouts/WelcomePage";
 import { motion, AnimatePresence } from "framer-motion";
-import MovingStars from "./Layouts/MovingStars";
+import MovingStars from "./Components/MovingStars";
 
 const App: React.FC = () => {
   const [isWelcoming, setIsWelcoming] = useState<boolean>(true);
